@@ -38,6 +38,8 @@ public delegate void EmojiPickedEventHandler(object sender, EmojiPickedEventArgs
 /// </summary>
 public partial class EmojiPicker : StackPanel
 {
+    public static string LastPickedEmoji;
+
     public EmojiPicker()
     {
         InitializeComponent();
@@ -64,7 +66,11 @@ public partial class EmojiPicker : StackPanel
     public string Selection
     {
         get => (string)GetValue(SelectionProperty);
-        set => SetValue(SelectionProperty, value);
+        set
+        {
+            SetValue(SelectionProperty, value);
+            LastPickedEmoji = value;
+        }
     }
 
     private void OnSelectionChanged(string s)

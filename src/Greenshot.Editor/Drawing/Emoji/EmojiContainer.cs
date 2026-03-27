@@ -24,9 +24,11 @@ using System.ComponentModel;
 using System.Linq;
 using System.Windows.Forms;
 using System.Windows.Forms.Integration;
+using Dapplo.Windows.Common.Structs;
 using Greenshot.Base.Core;
 using Greenshot.Base.Interfaces.Drawing;
 using Greenshot.Editor.Controls.Emoji;
+using Greenshot.Editor.Drawing.Fields;
 using Greenshot.Editor.Helpers;
 using Image = System.Drawing.Image;
 
@@ -56,11 +58,25 @@ namespace Greenshot.Editor.Drawing.Emoji
             }
         }
 
-        public EmojiContainer(Surface parent, string emoji, int size = 64) : base(parent)
+        public override NativeSize DefaultSize => new(64, 64);
+        public const string DefaultEmoji = "🙂";
+
+        public EmojiContainer(Surface parent, string emoji = null, int? size = null) : base(parent)
         {
-            Emoji = emoji;
-            Width = size;
-            Height = size;
+            Emoji = emoji ?? EmojiPicker.LastPickedEmoji ?? DefaultEmoji;
+
+            if (!size.HasValue && HasField(FieldType.FONT_SIZE))
+            {
+                float fSize = GetFieldValueAsFloat(FieldType.FONT_SIZE);
+                Width = (int)fSize;
+                Height = (int)fSize;
+            }
+            else
+            {
+                Width = DefaultSize.Width;
+                Height = DefaultSize.Height;
+            }
+
             Init();
         }
 
@@ -127,10 +143,26 @@ namespace Greenshot.Editor.Drawing.Emoji
             PropertyChanged += OnPropertyChanged;
         }
 
+        public override bool HandleMouseDown(int mouseX, int mouseY)
+        {
+            return base.HandleMouseDown(mouseX - (Width / 2), mouseY - (Height / 2));
+        }
 
-        /// <summary>
-        /// Handle the state of the Emoji Picker
-        /// </summary>
+        public override bool HandleMouseMove(int x, int y)
+        {
+            Invalidate();
+            Left = x - (Width / 2);
+            Top = y - (Height / 2);
+            Invalidate();
+            return true;
+        }
+
+        protected override void InitializeFields()
+        {
+            AddField(GetType(), FieldType.FONT_SIZE, 64f);
+        }
+
+        /// <summary> Handle the state of the Emoji Picker </summary>
         /// <param name="sender">object</param>
         /// <param name="e">PropertyChangedEventArgs</param>
         private void OnPropertyChanged(object sender, PropertyChangedEventArgs e)
