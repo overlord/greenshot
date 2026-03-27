@@ -38,13 +38,12 @@ public delegate void EmojiPickedEventHandler(object sender, EmojiPickedEventArgs
 /// </summary>
 public partial class EmojiPicker : StackPanel
 {
-    public static string LastPickedEmoji;
-
     public EmojiPicker()
     {
         InitializeComponent();
     }
 
+    public string LastPickedEmoji { get; private set; }
     public IList<Emojis.Group> EmojiGroups => EmojiData.Data.Groups;
 
     // Backwards compatibility for when the backend was a TextBlock.

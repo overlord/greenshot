@@ -63,7 +63,7 @@ namespace Greenshot.Editor.Drawing.Emoji
 
         public EmojiContainer(Surface parent, string emoji = null, int? size = null) : base(parent)
         {
-            Emoji = emoji ?? EmojiPicker.LastPickedEmoji ?? DefaultEmoji;
+            Emoji = emoji ?? _emojiPicker?.LastPickedEmoji ?? DefaultEmoji;
 
             if (!size.HasValue && HasField(FieldType.FONT_SIZE))
             {
