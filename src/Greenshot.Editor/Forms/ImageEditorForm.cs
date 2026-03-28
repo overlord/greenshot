@@ -28,13 +28,10 @@ using System.IO;
 using System.Linq;
 using System.Threading;
 using System.Windows.Forms;
-using Dapplo.Windows.Common.Enums;
 using Dapplo.Windows.Common.Extensions;
 using Dapplo.Windows.Common.Structs;
 using Dapplo.Windows.Dpi;
 using Dapplo.Windows.Kernel32;
-using Dapplo.Windows.Messages;
-using Dapplo.Windows.Messages.Enumerations;
 using Dapplo.Windows.User32;
 using Dapplo.Windows.User32.Structs;
 using Greenshot.Base;
@@ -68,6 +65,7 @@ namespace Greenshot.Editor.Forms
         private static readonly ILog Log = LogManager.GetLogger(typeof(ImageEditorForm));
         private static readonly EditorConfiguration EditorConfiguration = IniConfig.GetIniSection<EditorConfiguration>();
         private static readonly CoreConfiguration CoreConfiguration = IniConfig.GetIniSection<CoreConfiguration>();
+        private static readonly System.ComponentModel.ComponentResourceManager _resources = new(typeof(ImageEditorForm));
 
         private static readonly List<string> IgnoreDestinations = new()
         {
@@ -139,6 +137,7 @@ namespace Greenshot.Editor.Forms
             _surface?.AdjustToDpi(newDpi);
             UpdateUi();
         }
+
 
         public ImageEditorForm()
         {
@@ -1435,11 +1434,11 @@ namespace Greenshot.Editor.Forms
             Image icon;
             if (stepLabels <= 20)
             {
-                icon = (Image) resources.GetObject($"btnStepLabel{stepLabels:00}.Image");
+                icon = (Image) _resources.GetObject($"btnStepLabel{stepLabels:00}.Image");
             }
             else
             {
-                icon = (Image) resources.GetObject("btnStepLabel20+.Image");
+                icon = (Image) _resources.GetObject("btnStepLabel20+.Image");
             }
 
             btnStepLabel.Image = icon;
