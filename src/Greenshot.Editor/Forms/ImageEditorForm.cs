@@ -47,9 +47,11 @@ using Greenshot.Base.Interfaces.Forms;
 using Greenshot.Base.Interfaces.Ocr;
 using Greenshot.Base.Interfaces.Plugin;
 using Greenshot.Editor.Configuration;
+using Greenshot.Editor.Controls;
 using Greenshot.Editor.Controls.Emoji;
 using Greenshot.Editor.Destinations;
 using Greenshot.Editor.Drawing;
+using Greenshot.Editor.Drawing.Emoji;
 using Greenshot.Editor.Drawing.Fields;
 using Greenshot.Editor.Drawing.Fields.Binding;
 using Greenshot.Editor.Helpers;
@@ -161,6 +163,25 @@ namespace Greenshot.Editor.Forms
             //
             ManualLanguageApply = true;
             InitializeComponent();
+
+            // ------------------------------
+            //!_! Custom fine-tune InitializeComponent
+
+            // - from CoreConfiguration settings
+            toolsToolStrip.ImageScalingSize = coreConfiguration.IconSize;
+            menuStrip1.ImageScalingSize = coreConfiguration.IconSize;
+            destinationsToolStrip.ImageScalingSize = coreConfiguration.IconSize;
+            propertiesToolStrip.ImageScalingSize = coreConfiguration.IconSize;
+            propertiesToolStrip.MinimumSize = new System.Drawing.Size(150, coreConfiguration.IconSize.Height + 10);
+            // - from EmojiRenderer
+            btnEmoji.Image = EmojiRenderer.GetBitmap("🙂", 32);
+            // - from EmojiRenderer
+            toolsToolStrip.Renderer = new CustomToolStripProfessionalRenderer();
+            destinationsToolStrip.Renderer = new CustomToolStripProfessionalRenderer();
+            propertiesToolStrip.Renderer = new CustomToolStripProfessionalRenderer();
+
+            // ------------------------------
+
             // Make sure we change the icon size depending on the scaling
             Load += delegate
             {

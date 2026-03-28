@@ -328,10 +328,8 @@ namespace Greenshot.Editor.Forms
 			// toolsToolStrip
 			// 
 			this.toolsToolStrip.ClickThrough = true;
-			this.toolsToolStrip.ImageScalingSize = coreConfiguration.IconSize;
 			this.toolsToolStrip.Dock = System.Windows.Forms.DockStyle.None;
 			this.toolsToolStrip.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden;
-			this.toolsToolStrip.Renderer = new CustomToolStripProfessionalRenderer();
 			this.toolsToolStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
 									this.btnCursor,
 									this.toolStripSeparator1,
@@ -458,7 +456,6 @@ namespace Greenshot.Editor.Forms
 			// 
 			this.btnEmoji.CheckOnClick = true;
 			this.btnEmoji.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.btnEmoji.Image = EmojiRenderer.GetBitmap("🙂", 32);
 			this.btnEmoji.ImageTransparentColor = System.Drawing.Color.Magenta;
 			this.btnEmoji.Text = "Emoji (M)";
 			this.btnEmoji.Name = "btnEmoji";
@@ -515,13 +512,13 @@ namespace Greenshot.Editor.Forms
 			// 
 			this.addDropshadowToolStripMenuItem.LanguageKey = "editor_image_shadow";
 			this.addDropshadowToolStripMenuItem.Name = "addDropshadowToolStripMenuItem";
-			this.addDropshadowToolStripMenuItem.MouseUp += AddDropshadowToolStripMenuItemMouseUp;
+			this.addDropshadowToolStripMenuItem.MouseUp += new System.Windows.Forms.MouseEventHandler(this.AddDropshadowToolStripMenuItemMouseUp);
 			// 
 			// tornEdgesToolStripMenuItem
 			// 
 			this.tornEdgesToolStripMenuItem.LanguageKey = "editor_torn_edge";
 			this.tornEdgesToolStripMenuItem.Name = "tornEdgesToolStripMenuItem";
-			this.tornEdgesToolStripMenuItem.MouseUp += TornEdgesToolStripMenuItemMouseUp;
+			this.tornEdgesToolStripMenuItem.MouseUp += new System.Windows.Forms.MouseEventHandler(this.TornEdgesToolStripMenuItemMouseUp);
 			// 
 			// grayscaleToolStripMenuItem
 			// 
@@ -584,7 +581,6 @@ namespace Greenshot.Editor.Forms
 			// menuStrip1
 			// 
 			this.menuStrip1.ClickThrough = true;
-			this.menuStrip1.ImageScalingSize = coreConfiguration.IconSize;
 			this.menuStrip1.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.menuStrip1.Stretch = true;
 			this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -908,13 +904,11 @@ namespace Greenshot.Editor.Forms
 			// destinationsToolStrip
 			// 
 			this.destinationsToolStrip.ClickThrough = true;
-			this.destinationsToolStrip.ImageScalingSize = coreConfiguration.IconSize;
 			this.destinationsToolStrip.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.destinationsToolStrip.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden;
 			this.destinationsToolStrip.Name = "toolStrip1";
 			this.destinationsToolStrip.Stretch = true;
 			this.destinationsToolStrip.TabIndex = 0;
-			this.destinationsToolStrip.Renderer = new CustomToolStripProfessionalRenderer();
 			this.destinationsToolStrip.BackColor = System.Drawing.SystemColors.Control;
 			this.destinationsToolStrip.OverflowButton.DropDown.BackColor = System.Drawing.SystemColors.Control;
 			this.destinationsToolStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -1063,17 +1057,14 @@ namespace Greenshot.Editor.Forms
 			// propertiesToolStrip
 			// 
 			this.propertiesToolStrip.ClickThrough = true;
-			this.propertiesToolStrip.ImageScalingSize = coreConfiguration.IconSize;
 			this.propertiesToolStrip.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.propertiesToolStrip.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden;
-			this.propertiesToolStrip.MinimumSize = new System.Drawing.Size(150, coreConfiguration.IconSize.Height + 10);
 			this.propertiesToolStrip.Name = "propertiesToolStrip";
 			this.propertiesToolStrip.Stretch = true;
 			this.propertiesToolStrip.TabIndex = 2;
-			this.propertiesToolStrip.Renderer = new CustomToolStripProfessionalRenderer();
 			this.propertiesToolStrip.BackColor = System.Drawing.SystemColors.Control;
 			this.propertiesToolStrip.OverflowButton.DropDown.BackColor = System.Drawing.SystemColors.Control;
-			this.propertiesToolStrip.Paint += PropertiesToolStrip_Paint;
+			this.propertiesToolStrip.Paint += new System.Windows.Forms.PaintEventHandler(this.PropertiesToolStrip_Paint);
 			this.propertiesToolStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
 									this.obfuscateModeButton,
 									this.highlightModeButton,
@@ -1122,7 +1113,7 @@ namespace Greenshot.Editor.Forms
 			this.obfuscateModeButton.SelectedTag = FilterContainer.PreparedFilter.BLUR;
 			this.obfuscateModeButton.Tag = FilterContainer.PreparedFilter.BLUR;
 			// 
-			this.obfuscateModeButton.DropDownItemClicked += FilterPresetDropDownItemClicked;
+			this.obfuscateModeButton.DropDownItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.FilterPresetDropDownItemClicked);
 			// pixelizeToolStripMenuItem
 			// 
 			this.pixelizeToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("pixelizeToolStripMenuItem.Image")));
@@ -1152,7 +1143,7 @@ namespace Greenshot.Editor.Forms
 			this.cropModeButton.Name = "cropModeButton";
 			this.cropModeButton.SelectedTag = CropContainer.CropModes.Default;
 			this.cropModeButton.Tag = CropContainer.CropModes.Default;
-            this.cropModeButton.DropDownItemClicked += CropStyleDropDownItemClicked;
+            this.cropModeButton.DropDownItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.CropStyleDropDownItemClicked);
 			// 
 			// defaultCropStyleToolStripMenuItem
 			// 
@@ -1200,7 +1191,7 @@ namespace Greenshot.Editor.Forms
 			this.highlightModeButton.Name = "highlightModeButton";
 			this.highlightModeButton.SelectedTag = FilterContainer.PreparedFilter.TEXT_HIGHTLIGHT;
 			this.highlightModeButton.Tag = FilterContainer.PreparedFilter.TEXT_HIGHTLIGHT;
-            this.highlightModeButton.DropDownItemClicked += FilterPresetDropDownItemClicked;
+            this.highlightModeButton.DropDownItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.FilterPresetDropDownItemClicked);
 			// 
 			// textHighlightMenuItem
 			// 
@@ -1308,7 +1299,7 @@ namespace Greenshot.Editor.Forms
 			this.fontFamilyComboBox.Padding = new System.Windows.Forms.Padding(2,0,0,2);
 			this.fontFamilyComboBox.GotFocus += new System.EventHandler(this.ToolBarFocusableElementGotFocus);
 			this.fontFamilyComboBox.LostFocus += new System.EventHandler(this.ToolBarFocusableElementLostFocus);
-            this.fontFamilyComboBox.PropertyChanged += FontPropertyChanged;
+            this.fontFamilyComboBox.PropertyChanged += new System.ComponentModel.PropertyChangedEventHandler(this.FontPropertyChanged);
 			// 
 			// fontSizeLabel
 			// 
