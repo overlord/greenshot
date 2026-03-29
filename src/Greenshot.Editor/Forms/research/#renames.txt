@@ -1,0 +1,11 @@
+﻿// Fix for BUG-1653, the DropDownOpening is not called when there are no children.
+
+
+btnStepEmoji --> btnEmoji
+defaultCropStyleToolStripMenuItem --> defaultCropModeToolStripMenuItem
+horizontalCropStyleToolStripMenuItem --> horizontalCropModeToolStripMenuItem
+verticalCropStyleToolStripMenuItem -> verticalCropModeToolStripMenuItem
+
+???
+// topToolStripContainer.LeftToolStripPanel
+// topToolStripContainer.TopToolStripPanel

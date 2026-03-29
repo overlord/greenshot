@@ -1,0 +1,1610 @@
+﻿// aboutToolStripMenuItem
+// addBorderToolStripMenuItem
+// addCounterToolStripMenuItem
+// addDropshadowToolStripMenuItem
+// addEllipseToolStripMenuItem
+// addRectangleToolStripMenuItem
+// addSpeechBubbleToolStripMenuItem
+// addTextBoxToolStripMenuItem
+// alignBottomToolStripMenuItem
+// alignCenterToolStripMenuItem
+// alignLeftToolStripMenuItem
+// alignMiddleToolStripMenuItem
+// alignRightToolStripMenuItem
+// alignTopToolStripMenuItem
+// areaHighlightMenuItem
+// arrangeToolStripMenuItem
+// arrowHeadBothMenuItem
+// arrowHeadEndMenuItem
+// arrowHeadNoneMenuItem
+// arrowHeadsDropDownButton
+// arrowHeadsLabel
+// arrowHeadStartMenuItem
+// autoCropModeToolStripMenuItem
+// blurRadiusLabel
+// blurRadiusUpDown
+// blurToolStripMenuItem
+// brightnessLabel
+// brightnessUpDown
+// btnArrow
+// btnCancel
+// btnClipboard
+// btnConfirm
+// btnCopy
+// btnCrop
+// btnCursor
+// btnCut
+// btnDelete
+// btnEllipse
+// btnEmoji
+// btnFillColor
+// btnFreehand
+// btnHelp
+// btnHighlight
+// btnLine
+// btnLineColor
+// btnObfuscate
+// btnPaste
+// btnPrint
+// btnRect
+// btnRedo
+// btnResize
+// btnSave
+// btnSettings
+// btnSpeechBubble
+// btnStepLabel
+// btnText
+// btnUndo
+// closeAllToolStripMenuItem
+// closeToolStripMenuItem
+// copyPathMenuItem
+// copyToolStripMenuItem
+// counterLabel
+// counterUpDown
+// cropModeButton
+// cutToolStripMenuItem
+// defaultCropModeToolStripMenuItem
+// destinationsToolStrip
+// dimensionsLabel
+// downOneLevelToolStripMenuItem
+// downToBottomToolStripMenuItem
+// drawArrowToolStripMenuItem
+// drawFreehandToolStripMenuItem
+// drawLineToolStripMenuItem
+// duplicateToolStripMenuItem
+// editToolStripMenuItem
+// fileSavedStatusContextMenu
+// fileStripMenuItem
+// Fix for BUG-1653, the DropDownOpening is not called when there are no children.
+// fontBoldButton
+// fontFamilyComboBox
+// fontItalicButton
+// fontSizeLabel
+// fontSizeUpDown
+// grayscaleHighlightMenuItem
+// grayscaleToolStripMenuItem
+// helpToolStripMenuItem
+// helpToolStripMenuItem1
+// highlightModeButton
+// horizontalCropModeToolStripMenuItem
+// ImageEditorForm
+// insert_window_toolstripmenuitem
+// invertToolStripMenuItem
+// lineThicknessLabel
+// lineThicknessUpDown
+// loadElementsToolStripMenuItem
+// magnificationFactorLabel
+// magnificationFactorUpDown
+// magnifyMenuItem
+// menuStrip1
+// obfuscateModeButton
+// obfuscateTextToolStripMenuItem
+// objectToolStripMenuItem
+// openDirectoryMenuItem
+// panel1
+// pasteToolStripMenuItem
+// pixelizeToolStripMenuItem
+// pixelSizeLabel
+// pixelSizeUpDown
+// pluginToolStripMenuItem
+// preferencesToolStripMenuItem
+// previewQualityLabel
+// previewQualityUpDown
+// propertiesToolStrip
+// redoToolStripMenuItem
+// removeObjectToolStripMenuItem
+// removeTransparencyToolStripMenuItem
+// rotateCcwToolstripButton
+// rotateCwToolstripButton
+// saveElementsToolStripMenuItem
+// selectAllToolStripMenuItem
+// shadowButton
+// statusLabel
+// statusStrip1
+// statusStripSpacer
+// tableLayoutPanel1
+// textHighlightMenuItem
+// textHorizontalAlignmentButton
+// textVerticalAlignmentButton
+// toolsToolStrip
+// toolStripSeparator
+// toolStripSeparator1
+// toolStripSeparator10
+// toolStripSeparator11
+// toolStripSeparator12
+// toolStripSeparator13
+// toolStripSeparator14
+// toolStripSeparator15
+// toolStripSeparator16
+// toolStripSeparator2
+// toolStripSeparator3
+// toolStripSeparator4
+// toolStripSeparator5
+// toolStripSeparator6
+// toolStripSeparator7
+// toolStripSeparator8
+// toolStripSeparator9
+// toolStripSplitButton1
+// topToolStripContainer
+// topToolStripContainer.BottomToolStripPanel
+// topToolStripContainer.ContentPanel
+// tornEdgesToolStripMenuItem
+// undoToolStripMenuItem
+// upOneLevelToolStripMenuItem
+// upToTopToolStripMenuItem
+// verticalCropModeToolStripMenuItem
+// zoom200MenuItem
+// zoom25MenuItem
+// zoom300MenuItem
+// zoom400MenuItem
+// zoom50MenuItem
+// zoom600MenuItem
+// zoom66MenuItem
+// zoom75MenuItem
+// zoomActualSizeMenuItem
+// zoomBestFitMenuItem
+// zoomInMenuItem
+// zoomMainMenuItem
+// zoomMenuSeparator1
+// zoomMenuSeparator2
+// zoomMenuSeparator3
+// zoomMenuSeparator4
+// zoomMenuStrip
+// zoomOutMenuItem
+// zoomStatusDropDownBtn
+/// </summary>
+/// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+/// <summary>
+/// Designer variable used to keep track of non-visual components.
+/// Disposes resources used by the form.
+/// Do not change the method contents inside the source code editor. The Forms designer might
+/// not be able to load this method if it was changed manually.
+/// This method is required for Windows Forms designer support.
+0,
+0});
+1,
+10,
+100,
+12,
+2,
+200,
+5,
+50,
+500,
+7,
+8,
+base.Dispose(disposing);
+components.Dispose();
+if (components != null) {
+if (disposing) {
+namespace Greenshot.Editor.Forms
+partial class ImageEditorForm {
+private BindableToolStripButton btnCancel;
+private BindableToolStripButton btnConfirm;
+private BindableToolStripButton fontBoldButton;
+private BindableToolStripButton fontItalicButton;
+private BindableToolStripButton shadowButton;
+private BindableToolStripDropDownButton cropModeButton;
+private BindableToolStripDropDownButton highlightModeButton;
+private BindableToolStripDropDownButton obfuscateModeButton;
+private BindableToolStripDropDownButton textHorizontalAlignmentButton;
+private BindableToolStripDropDownButton textVerticalAlignmentButton;
+private FontFamilyComboBox fontFamilyComboBox;
+private GreenshotToolStripButton btnArrow;
+private GreenshotToolStripButton btnClipboard;
+private GreenshotToolStripButton btnCopy;
+private GreenshotToolStripButton btnCrop;
+private GreenshotToolStripButton btnCursor;
+private GreenshotToolStripButton btnCut;
+private GreenshotToolStripButton btnDelete;
+private GreenshotToolStripButton btnEllipse;
+private GreenshotToolStripButton btnEmoji;
+private GreenshotToolStripButton btnFreehand;
+private GreenshotToolStripButton btnHelp;
+private GreenshotToolStripButton btnHighlight;
+private GreenshotToolStripButton btnLine;
+private GreenshotToolStripButton btnObfuscate;
+private GreenshotToolStripButton btnPaste;
+private GreenshotToolStripButton btnPrint;
+private GreenshotToolStripButton btnRect;
+private GreenshotToolStripButton btnResize;
+private GreenshotToolStripButton btnSave;
+private GreenshotToolStripButton btnSettings;
+private GreenshotToolStripButton btnSpeechBubble;
+private GreenshotToolStripButton btnStepLabel;
+private GreenshotToolStripButton btnText;
+private GreenshotToolStripButton rotateCcwToolstripButton;
+private GreenshotToolStripButton rotateCwToolstripButton;
+private GreenshotToolStripDropDownButton arrowHeadsDropDownButton;
+private GreenshotToolStripDropDownButton toolStripSplitButton1;
+private GreenshotToolStripLabel arrowHeadsLabel;
+private GreenshotToolStripLabel blurRadiusLabel;
+private GreenshotToolStripLabel brightnessLabel;
+private GreenshotToolStripLabel counterLabel;
+private GreenshotToolStripLabel fontSizeLabel;
+private GreenshotToolStripLabel lineThicknessLabel;
+private GreenshotToolStripLabel magnificationFactorLabel;
+private GreenshotToolStripLabel pixelSizeLabel;
+private GreenshotToolStripLabel previewQualityLabel;
+private GreenshotToolStripMenuItem aboutToolStripMenuItem;
+private GreenshotToolStripMenuItem addBorderToolStripMenuItem;
+private GreenshotToolStripMenuItem addCounterToolStripMenuItem;
+private GreenshotToolStripMenuItem addDropshadowToolStripMenuItem;
+private GreenshotToolStripMenuItem addEllipseToolStripMenuItem;
+private GreenshotToolStripMenuItem addRectangleToolStripMenuItem;
+private GreenshotToolStripMenuItem addSpeechBubbleToolStripMenuItem;
+private GreenshotToolStripMenuItem addTextBoxToolStripMenuItem;
+private GreenshotToolStripMenuItem alignBottomToolStripMenuItem;
+private GreenshotToolStripMenuItem alignCenterToolStripMenuItem;
+private GreenshotToolStripMenuItem alignLeftToolStripMenuItem;
+private GreenshotToolStripMenuItem alignMiddleToolStripMenuItem;
+private GreenshotToolStripMenuItem alignRightToolStripMenuItem;
+private GreenshotToolStripMenuItem alignTopToolStripMenuItem;
+private GreenshotToolStripMenuItem areaHighlightMenuItem;
+private GreenshotToolStripMenuItem arrangeToolStripMenuItem;
+private GreenshotToolStripMenuItem arrowHeadBothMenuItem;
+private GreenshotToolStripMenuItem arrowHeadEndMenuItem;
+private GreenshotToolStripMenuItem arrowHeadNoneMenuItem;
+private GreenshotToolStripMenuItem arrowHeadStartMenuItem;
+private GreenshotToolStripMenuItem autoCropModeToolStripMenuItem;
+private GreenshotToolStripMenuItem blurToolStripMenuItem;
+private GreenshotToolStripMenuItem closeAllToolStripMenuItem;
+private GreenshotToolStripMenuItem closeToolStripMenuItem;
+private GreenshotToolStripMenuItem copyPathMenuItem;
+private GreenshotToolStripMenuItem copyToolStripMenuItem;
+private GreenshotToolStripMenuItem cutToolStripMenuItem;
+private GreenshotToolStripMenuItem defaultCropModeToolStripMenuItem;
+private GreenshotToolStripMenuItem downOneLevelToolStripMenuItem;
+private GreenshotToolStripMenuItem downToBottomToolStripMenuItem;
+private GreenshotToolStripMenuItem drawArrowToolStripMenuItem;
+private GreenshotToolStripMenuItem drawFreehandToolStripMenuItem;
+private GreenshotToolStripMenuItem drawLineToolStripMenuItem;
+private GreenshotToolStripMenuItem duplicateToolStripMenuItem;
+private GreenshotToolStripMenuItem editToolStripMenuItem;
+private GreenshotToolStripMenuItem fileStripMenuItem;
+private GreenshotToolStripMenuItem grayscaleHighlightMenuItem;
+private GreenshotToolStripMenuItem grayscaleToolStripMenuItem;
+private GreenshotToolStripMenuItem helpToolStripMenuItem1;
+private GreenshotToolStripMenuItem helpToolStripMenuItem;
+private GreenshotToolStripMenuItem horizontalCropModeToolStripMenuItem;
+private GreenshotToolStripMenuItem insert_window_toolstripmenuitem;
+private GreenshotToolStripMenuItem invertToolStripMenuItem;
+private GreenshotToolStripMenuItem loadElementsToolStripMenuItem;
+private GreenshotToolStripMenuItem magnifyMenuItem;
+private GreenshotToolStripMenuItem obfuscateTextToolStripMenuItem;
+private GreenshotToolStripMenuItem objectToolStripMenuItem;
+private GreenshotToolStripMenuItem openDirectoryMenuItem;
+private GreenshotToolStripMenuItem pasteToolStripMenuItem;
+private GreenshotToolStripMenuItem pixelizeToolStripMenuItem;
+private GreenshotToolStripMenuItem pluginToolStripMenuItem;
+private GreenshotToolStripMenuItem preferencesToolStripMenuItem;
+private GreenshotToolStripMenuItem removeObjectToolStripMenuItem;
+private GreenshotToolStripMenuItem removeTransparencyToolStripMenuItem;
+private GreenshotToolStripMenuItem saveElementsToolStripMenuItem;
+private GreenshotToolStripMenuItem selectAllToolStripMenuItem;
+private GreenshotToolStripMenuItem textHighlightMenuItem;
+private GreenshotToolStripMenuItem tornEdgesToolStripMenuItem;
+private GreenshotToolStripMenuItem upOneLevelToolStripMenuItem;
+private GreenshotToolStripMenuItem upToTopToolStripMenuItem;
+private GreenshotToolStripMenuItem verticalCropModeToolStripMenuItem;
+private MenuStripEx menuStrip1;
+private NonJumpingPanel panel1;
+private System.ComponentModel.IContainer components = null;
+private System.Windows.Forms.ContextMenuStrip fileSavedStatusContextMenu;
+private System.Windows.Forms.ContextMenuStrip zoomMenuStrip;
+private System.Windows.Forms.StatusStrip statusStrip1;
+private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
+private System.Windows.Forms.ToolStripButton btnRedo;
+private System.Windows.Forms.ToolStripButton btnUndo;
+private System.Windows.Forms.ToolStripContainer topToolStripContainer;
+private System.Windows.Forms.ToolStripDropDownButton zoomStatusDropDownBtn;
+private System.Windows.Forms.ToolStripMenuItem redoToolStripMenuItem;
+private System.Windows.Forms.ToolStripMenuItem undoToolStripMenuItem;
+private System.Windows.Forms.ToolStripMenuItem zoom200MenuItem;
+private System.Windows.Forms.ToolStripMenuItem zoom25MenuItem;
+private System.Windows.Forms.ToolStripMenuItem zoom300MenuItem;
+private System.Windows.Forms.ToolStripMenuItem zoom400MenuItem;
+private System.Windows.Forms.ToolStripMenuItem zoom50MenuItem;
+private System.Windows.Forms.ToolStripMenuItem zoom600MenuItem;
+private System.Windows.Forms.ToolStripMenuItem zoom66MenuItem;
+private System.Windows.Forms.ToolStripMenuItem zoom75MenuItem;
+private System.Windows.Forms.ToolStripMenuItem zoomActualSizeMenuItem;
+private System.Windows.Forms.ToolStripMenuItem zoomBestFitMenuItem;
+private System.Windows.Forms.ToolStripMenuItem zoomInMenuItem;
+private System.Windows.Forms.ToolStripMenuItem zoomMainMenuItem;
+private System.Windows.Forms.ToolStripMenuItem zoomOutMenuItem;
+private System.Windows.Forms.ToolStripSeparator toolStripSeparator10;
+private System.Windows.Forms.ToolStripSeparator toolStripSeparator11;
+private System.Windows.Forms.ToolStripSeparator toolStripSeparator12;
+private System.Windows.Forms.ToolStripSeparator toolStripSeparator13;
+private System.Windows.Forms.ToolStripSeparator toolStripSeparator14;
+private System.Windows.Forms.ToolStripSeparator toolStripSeparator15;
+private System.Windows.Forms.ToolStripSeparator toolStripSeparator16;
+private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
+private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
+private System.Windows.Forms.ToolStripSeparator toolStripSeparator3;
+private System.Windows.Forms.ToolStripSeparator toolStripSeparator4;
+private System.Windows.Forms.ToolStripSeparator toolStripSeparator5;
+private System.Windows.Forms.ToolStripSeparator toolStripSeparator6;
+private System.Windows.Forms.ToolStripSeparator toolStripSeparator7;
+private System.Windows.Forms.ToolStripSeparator toolStripSeparator8;
+private System.Windows.Forms.ToolStripSeparator toolStripSeparator9;
+private System.Windows.Forms.ToolStripSeparator toolStripSeparator;
+private System.Windows.Forms.ToolStripSeparator zoomMenuSeparator1;
+private System.Windows.Forms.ToolStripSeparator zoomMenuSeparator2;
+private System.Windows.Forms.ToolStripSeparator zoomMenuSeparator3;
+private System.Windows.Forms.ToolStripSeparator zoomMenuSeparator4;
+private System.Windows.Forms.ToolStripStatusLabel dimensionsLabel;
+private System.Windows.Forms.ToolStripStatusLabel statusLabel;
+private System.Windows.Forms.ToolStripStatusLabel statusStripSpacer;
+private ToolStripColorButton btnFillColor;
+private ToolStripColorButton btnLineColor;
+private ToolStripEx destinationsToolStrip;
+private ToolStripEx propertiesToolStrip;
+private ToolStripEx toolsToolStrip;
+private ToolStripNumericUpDown blurRadiusUpDown;
+private ToolStripNumericUpDown brightnessUpDown;
+private ToolStripNumericUpDown counterUpDown;
+private ToolStripNumericUpDown fontSizeUpDown;
+private ToolStripNumericUpDown lineThicknessUpDown;
+private ToolStripNumericUpDown magnificationFactorUpDown;
+private ToolStripNumericUpDown pixelSizeUpDown;
+private ToolStripNumericUpDown previewQualityUpDown;
+private void InitializeComponent() {
+protected override void Dispose(bool disposing)
+System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ImageEditorForm));
+this.aboutToolStripMenuItem = new Greenshot.Base.Controls.GreenshotToolStripMenuItem();
+this.aboutToolStripMenuItem.Click += new System.EventHandler(this.AboutToolStripMenuItemClick);
+this.aboutToolStripMenuItem.LanguageKey = "contextmenu_about";
+this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
+this.aboutToolStripMenuItem.Size = new System.Drawing.Size(86, 22);
+this.aboutToolStripMenuItem});
+this.Activated += new System.EventHandler(this.ImageEditorFormActivated);
+this.addBorderToolStripMenuItem = new Greenshot.Base.Controls.GreenshotToolStripMenuItem();
+this.addBorderToolStripMenuItem,
+this.addBorderToolStripMenuItem.Click += new System.EventHandler(this.AddBorderToolStripMenuItemClick);
+this.addBorderToolStripMenuItem.LanguageKey = "editor_border";
+this.addBorderToolStripMenuItem.Name = "addBorderToolStripMenuItem";
+this.addBorderToolStripMenuItem.Size = new System.Drawing.Size(67, 22);
+this.addCounterToolStripMenuItem = new Greenshot.Base.Controls.GreenshotToolStripMenuItem();
+this.addCounterToolStripMenuItem,
+this.addCounterToolStripMenuItem.Click += new System.EventHandler(this.AddCounterToolStripMenuItemClick);
+this.addCounterToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("btnStepLabel01.Image")));
+this.addCounterToolStripMenuItem.LanguageKey = "editor_counter";
+this.addCounterToolStripMenuItem.Name = "addCounterToolStripMenuItem";
+this.addCounterToolStripMenuItem.Size = new System.Drawing.Size(109, 22);
+this.addDropshadowToolStripMenuItem = new Greenshot.Base.Controls.GreenshotToolStripMenuItem();
+this.addDropshadowToolStripMenuItem,
+this.addDropshadowToolStripMenuItem.LanguageKey = "editor_image_shadow";
+this.addDropshadowToolStripMenuItem.MouseUp += new System.Windows.Forms.MouseEventHandler(this.AddDropshadowToolStripMenuItemMouseUp);
+this.addDropshadowToolStripMenuItem.Name = "addDropshadowToolStripMenuItem";
+this.addDropshadowToolStripMenuItem.Size = new System.Drawing.Size(67, 22);
+this.addEllipseToolStripMenuItem = new Greenshot.Base.Controls.GreenshotToolStripMenuItem();
+this.addEllipseToolStripMenuItem,
+this.addEllipseToolStripMenuItem.Click += new System.EventHandler(this.AddEllipseToolStripMenuItemClick);
+this.addEllipseToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("addEllipseToolStripMenuItem.Image")));
+this.addEllipseToolStripMenuItem.LanguageKey = "editor_drawellipse";
+this.addEllipseToolStripMenuItem.Name = "addEllipseToolStripMenuItem";
+this.addEllipseToolStripMenuItem.Size = new System.Drawing.Size(109, 22);
+this.addRectangleToolStripMenuItem = new Greenshot.Base.Controls.GreenshotToolStripMenuItem();
+this.addRectangleToolStripMenuItem,
+this.addRectangleToolStripMenuItem.Click += new System.EventHandler(this.AddRectangleToolStripMenuItemClick);
+this.addRectangleToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("addRectangleToolStripMenuItem.Image")));
+this.addRectangleToolStripMenuItem.LanguageKey = "editor_drawrectangle";
+this.addRectangleToolStripMenuItem.Name = "addRectangleToolStripMenuItem";
+this.addRectangleToolStripMenuItem.Size = new System.Drawing.Size(109, 22);
+this.addSpeechBubbleToolStripMenuItem = new Greenshot.Base.Controls.GreenshotToolStripMenuItem();
+this.addSpeechBubbleToolStripMenuItem,
+this.addSpeechBubbleToolStripMenuItem.Click += new System.EventHandler(this.AddSpeechBubbleToolStripMenuItemClick);
+this.addSpeechBubbleToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("btnSpeechBubble.Image")));
+this.addSpeechBubbleToolStripMenuItem.LanguageKey = "editor_speechbubble";
+this.addSpeechBubbleToolStripMenuItem.Name = "addSpeechBubbleToolStripMenuItem";
+this.addSpeechBubbleToolStripMenuItem.Size = new System.Drawing.Size(109, 22);
+this.addTextBoxToolStripMenuItem = new Greenshot.Base.Controls.GreenshotToolStripMenuItem();
+this.addTextBoxToolStripMenuItem,
+this.addTextBoxToolStripMenuItem.Click += new System.EventHandler(this.AddTextBoxToolStripMenuItemClick);
+this.addTextBoxToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("addTextBoxToolStripMenuItem.Image")));
+this.addTextBoxToolStripMenuItem.LanguageKey = "editor_drawtextbox";
+this.addTextBoxToolStripMenuItem.Name = "addTextBoxToolStripMenuItem";
+this.addTextBoxToolStripMenuItem.Size = new System.Drawing.Size(109, 22);
+this.alignBottomToolStripMenuItem = new Greenshot.Base.Controls.GreenshotToolStripMenuItem();
+this.alignBottomToolStripMenuItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.ImageAndText;
+this.alignBottomToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("btnAlignBottom.Image")));
+this.alignBottomToolStripMenuItem.LanguageKey = "editor_align_bottom";
+this.alignBottomToolStripMenuItem.Name = "alignBottomToolStripMenuItem";
+this.alignBottomToolStripMenuItem.Tag = System.Drawing.StringAlignment.Far;
+this.alignBottomToolStripMenuItem});
+this.alignCenterToolStripMenuItem = new Greenshot.Base.Controls.GreenshotToolStripMenuItem();
+this.alignCenterToolStripMenuItem,
+this.alignCenterToolStripMenuItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.ImageAndText;
+this.alignCenterToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("btnAlignCenter.Image")));
+this.alignCenterToolStripMenuItem.LanguageKey = "editor_align_center";
+this.alignCenterToolStripMenuItem.Name = "alignCenterToolStripMenuItem";
+this.alignCenterToolStripMenuItem.Tag = System.Drawing.StringAlignment.Center;
+this.alignLeftToolStripMenuItem = new Greenshot.Base.Controls.GreenshotToolStripMenuItem();
+this.alignLeftToolStripMenuItem,
+this.alignLeftToolStripMenuItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.ImageAndText;
+this.alignLeftToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("btnAlignLeft.Image")));
+this.alignLeftToolStripMenuItem.LanguageKey = "editor_align_left";
+this.alignLeftToolStripMenuItem.Name = "alignLeftToolStripMenuItem";
+this.alignLeftToolStripMenuItem.Tag = System.Drawing.StringAlignment.Near;
+this.alignMiddleToolStripMenuItem = new Greenshot.Base.Controls.GreenshotToolStripMenuItem();
+this.alignMiddleToolStripMenuItem,
+this.alignMiddleToolStripMenuItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.ImageAndText;
+this.alignMiddleToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("btnAlignMiddle.Image")));
+this.alignMiddleToolStripMenuItem.LanguageKey = "editor_align_middle";
+this.alignMiddleToolStripMenuItem.Name = "alignMiddleToolStripMenuItem";
+this.alignMiddleToolStripMenuItem.Tag = System.Drawing.StringAlignment.Center;
+this.alignRightToolStripMenuItem = new Greenshot.Base.Controls.GreenshotToolStripMenuItem();
+this.alignRightToolStripMenuItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.ImageAndText;
+this.alignRightToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("btnAlignRight.Image")));
+this.alignRightToolStripMenuItem.LanguageKey = "editor_align_right";
+this.alignRightToolStripMenuItem.Name = "alignRightToolStripMenuItem";
+this.alignRightToolStripMenuItem.Tag = System.Drawing.StringAlignment.Far;
+this.alignRightToolStripMenuItem});
+this.alignTopToolStripMenuItem = new Greenshot.Base.Controls.GreenshotToolStripMenuItem();
+this.alignTopToolStripMenuItem,
+this.alignTopToolStripMenuItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.ImageAndText;
+this.alignTopToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("btnAlignTop.Image")));
+this.alignTopToolStripMenuItem.LanguageKey = "editor_align_top";
+this.alignTopToolStripMenuItem.Name = "alignTopToolStripMenuItem";
+this.alignTopToolStripMenuItem.Tag = System.Drawing.StringAlignment.Near;
+this.areaHighlightMenuItem = new Greenshot.Base.Controls.GreenshotToolStripMenuItem();
+this.areaHighlightMenuItem,
+this.areaHighlightMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("areaHighlightMenuItem.Image")));
+this.areaHighlightMenuItem.LanguageKey = "editor_highlight_area";
+this.areaHighlightMenuItem.Name = "areaHighlightMenuItem";
+this.areaHighlightMenuItem.Tag = FilterContainer.PreparedFilter.AREA_HIGHLIGHT;
+this.arrangeToolStripMenuItem = new Greenshot.Base.Controls.GreenshotToolStripMenuItem();
+this.arrangeToolStripMenuItem,
+this.arrangeToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+this.arrangeToolStripMenuItem.Enabled = false;
+this.arrangeToolStripMenuItem.LanguageKey = "editor_arrange";
+this.arrangeToolStripMenuItem.Name = "arrangeToolStripMenuItem";
+this.arrowHeadBothMenuItem = new Greenshot.Base.Controls.GreenshotToolStripMenuItem();
+this.arrowHeadBothMenuItem,
+this.arrowHeadBothMenuItem.Click += new System.EventHandler(this.ArrowHeadsToolStripMenuItemClick);
+this.arrowHeadBothMenuItem.LanguageKey = "editor_arrowheads_both";
+this.arrowHeadBothMenuItem.Name = "arrowHeadBothMenuItem";
+this.arrowHeadBothMenuItem.Tag = ArrowContainer.ArrowHeadCombination.BOTH;
+this.arrowHeadEndMenuItem = new Greenshot.Base.Controls.GreenshotToolStripMenuItem();
+this.arrowHeadEndMenuItem,
+this.arrowHeadEndMenuItem.Click += new System.EventHandler(this.ArrowHeadsToolStripMenuItemClick);
+this.arrowHeadEndMenuItem.LanguageKey = "editor_arrowheads_end";
+this.arrowHeadEndMenuItem.Name = "arrowHeadEndMenuItem";
+this.arrowHeadEndMenuItem.Tag = ArrowContainer.ArrowHeadCombination.END_POINT;
+this.arrowHeadNoneMenuItem = new Greenshot.Base.Controls.GreenshotToolStripMenuItem();
+this.arrowHeadNoneMenuItem.Click += new System.EventHandler(this.ArrowHeadsToolStripMenuItemClick);
+this.arrowHeadNoneMenuItem.LanguageKey = "editor_arrowheads_none";
+this.arrowHeadNoneMenuItem.Name = "arrowHeadNoneMenuItem";
+this.arrowHeadNoneMenuItem.Tag = ArrowContainer.ArrowHeadCombination.NONE;
+this.arrowHeadNoneMenuItem});
+this.arrowHeadsDropDownButton = new GreenshotToolStripDropDownButton();
+this.arrowHeadsDropDownButton,
+this.arrowHeadsDropDownButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+this.arrowHeadsDropDownButton.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+this.arrowHeadsDropDownButton.Image = ((System.Drawing.Image)(resources.GetObject("arrowHeadsDropDownButton.Image")));
+this.arrowHeadsDropDownButton.ImageTransparentColor = System.Drawing.Color.Magenta;
+this.arrowHeadsDropDownButton.LanguageKey = "editor_arrowheads";
+this.arrowHeadsDropDownButton.Name = "arrowHeadsDropDownButton";
+this.arrowHeadsLabel = new Greenshot.Base.Controls.GreenshotToolStripLabel();
+this.arrowHeadsLabel,
+this.arrowHeadsLabel.LanguageKey = "editor_pixel_size";
+this.arrowHeadsLabel.Name = "arrowHeadsLabel";
+this.arrowHeadStartMenuItem = new Greenshot.Base.Controls.GreenshotToolStripMenuItem();
+this.arrowHeadStartMenuItem,
+this.arrowHeadStartMenuItem.Click += new System.EventHandler(this.ArrowHeadsToolStripMenuItemClick);
+this.arrowHeadStartMenuItem.LanguageKey = "editor_arrowheads_start";
+this.arrowHeadStartMenuItem.Name = "arrowHeadStartMenuItem";
+this.arrowHeadStartMenuItem.Tag = ArrowContainer.ArrowHeadCombination.START_POINT;
+this.autoCropModeToolStripMenuItem = new Greenshot.Base.Controls.GreenshotToolStripMenuItem();
+this.autoCropModeToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("AutoCrop.Image")));
+this.autoCropModeToolStripMenuItem.LanguageKey = "editor_cropmode_auto";
+this.autoCropModeToolStripMenuItem.Name = "autoCropModeToolStripMenuItem";
+this.autoCropModeToolStripMenuItem.Tag = CropContainer.CropModes.AutoCrop;
+this.autoCropModeToolStripMenuItem});
+this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
+this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
+this.blurRadiusLabel = new Greenshot.Base.Controls.GreenshotToolStripLabel();
+this.blurRadiusLabel,
+this.blurRadiusLabel.LanguageKey = "editor_blur_radius";
+this.blurRadiusLabel.Name = "blurRadiusLabel";
+this.blurRadiusLabel.Text = "Blur radius";
+this.blurRadiusUpDown = new ToolStripNumericUpDown();
+this.blurRadiusUpDown,
+this.blurRadiusUpDown.DecimalPlaces = 0;
+this.blurRadiusUpDown.GotFocus += new System.EventHandler(this.ToolBarFocusableElementGotFocus);
+this.blurRadiusUpDown.Increment = new decimal(new int[] {
+this.blurRadiusUpDown.LostFocus += new System.EventHandler(this.ToolBarFocusableElementLostFocus);
+this.blurRadiusUpDown.Maximum = new decimal(new int[] {
+this.blurRadiusUpDown.Minimum = new decimal(new int[] {
+this.blurRadiusUpDown.Name = "blurRadiusUpDown";
+this.blurRadiusUpDown.Text = "1";
+this.blurRadiusUpDown.Value = new decimal(new int[] {
+this.blurToolStripMenuItem = new Greenshot.Base.Controls.GreenshotToolStripMenuItem();
+this.blurToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("blurToolStripMenuItem.Image")));
+this.blurToolStripMenuItem.LanguageKey = "editor_obfuscate_blur";
+this.blurToolStripMenuItem.Name = "blurToolStripMenuItem";
+this.blurToolStripMenuItem.Tag = FilterContainer.PreparedFilter.BLUR;
+this.blurToolStripMenuItem});
+this.brightnessLabel = new Greenshot.Base.Controls.GreenshotToolStripLabel();
+this.brightnessLabel,
+this.brightnessLabel.LanguageKey = "editor_brightness";
+this.brightnessLabel.Name = "brightnessLabel";
+this.brightnessLabel.Text = "Brightness";
+this.brightnessUpDown = new ToolStripNumericUpDown();
+this.brightnessUpDown,
+this.brightnessUpDown.DecimalPlaces = 0;
+this.brightnessUpDown.GotFocus += new System.EventHandler(this.ToolBarFocusableElementGotFocus);
+this.brightnessUpDown.Increment = new decimal(new int[] {
+this.brightnessUpDown.LostFocus += new System.EventHandler(this.ToolBarFocusableElementLostFocus);
+this.brightnessUpDown.Maximum = new decimal(new int[] {
+this.brightnessUpDown.Minimum = new decimal(new int[] {
+this.brightnessUpDown.Name = "brightnessUpDown";
+this.brightnessUpDown.Text = "100";
+this.brightnessUpDown.Value = new decimal(new int[] {
+this.btnArrow = new GreenshotToolStripButton();
+this.btnArrow,
+this.btnArrow.CheckOnClick = true;
+this.btnArrow.Click += new System.EventHandler(this.BtnArrowClick);
+this.btnArrow.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+this.btnArrow.Image = ((System.Drawing.Image)(resources.GetObject("btnArrow.Image")));
+this.btnArrow.ImageTransparentColor = System.Drawing.Color.Magenta;
+this.btnArrow.LanguageKey = "editor_drawarrow";
+this.btnArrow.Name = "btnArrow";
+this.btnCancel = new BindableToolStripButton();
+this.btnCancel,
+this.btnCancel.Click += new System.EventHandler(this.BtnCancelClick);
+this.btnCancel.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+this.btnCancel.Image = ((System.Drawing.Image)(resources.GetObject("btnCancel.Image")));
+this.btnCancel.ImageTransparentColor = System.Drawing.Color.Magenta;
+this.btnCancel.LanguageKey = "editor_cancel";
+this.btnCancel.Name = "btnCancel";
+this.btnCancel.Text = "Cancel";
+this.btnClipboard = new GreenshotToolStripButton();
+this.btnClipboard,
+this.btnClipboard.Click += new System.EventHandler(this.BtnClipboardClick);
+this.btnClipboard.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+this.btnClipboard.Image = ((System.Drawing.Image)(resources.GetObject("btnClipboard.Image")));
+this.btnClipboard.ImageTransparentColor = System.Drawing.Color.Magenta;
+this.btnClipboard.LanguageKey = "editor_copyimagetoclipboard";
+this.btnClipboard.Name = "btnClipboard";
+this.btnConfirm = new BindableToolStripButton();
+this.btnConfirm,
+this.btnConfirm.Click += new System.EventHandler(this.BtnConfirmClick);
+this.btnConfirm.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+this.btnConfirm.Image = ((System.Drawing.Image)(resources.GetObject("btnConfirm.Image")));
+this.btnConfirm.ImageTransparentColor = System.Drawing.Color.Magenta;
+this.btnConfirm.LanguageKey = "editor_confirm";
+this.btnConfirm.Name = "btnConfirm";
+this.btnConfirm.Text = "Confirm";
+this.btnCopy = new GreenshotToolStripButton();
+this.btnCopy,
+this.btnCopy.Click += new System.EventHandler(this.BtnCopyClick);
+this.btnCopy.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+this.btnCopy.Enabled = false;
+this.btnCopy.Image = ((System.Drawing.Image)(resources.GetObject("btnCopy.Image")));
+this.btnCopy.ImageTransparentColor = System.Drawing.Color.Magenta;
+this.btnCopy.LanguageKey = "editor_copytoclipboard";
+this.btnCopy.Name = "btnCopy";
+this.btnCrop = new GreenshotToolStripButton();
+this.btnCrop,
+this.btnCrop.Click += new System.EventHandler(this.BtnCropClick);
+this.btnCrop.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+this.btnCrop.Image = ((System.Drawing.Image)(resources.GetObject("btnCrop.Image")));
+this.btnCrop.ImageTransparentColor = System.Drawing.Color.Magenta;
+this.btnCrop.LanguageKey = "editor_crop";
+this.btnCrop.Name = "btnCrop";
+this.btnCursor = new GreenshotToolStripButton();
+this.btnCursor,
+this.btnCursor.Checked = true;
+this.btnCursor.CheckOnClick = true;
+this.btnCursor.CheckState = System.Windows.Forms.CheckState.Checked;
+this.btnCursor.Click += new System.EventHandler(this.BtnCursorClick);
+this.btnCursor.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+this.btnCursor.Image = ((System.Drawing.Image)(resources.GetObject("btnCursor.Image")));
+this.btnCursor.ImageTransparentColor = System.Drawing.Color.Magenta;
+this.btnCursor.LanguageKey = "editor_cursortool";
+this.btnCursor.Name = "btnCursor";
+this.btnCut = new GreenshotToolStripButton();
+this.btnCut,
+this.btnCut.Click += new System.EventHandler(this.BtnCutClick);
+this.btnCut.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+this.btnCut.Enabled = false;
+this.btnCut.Image = ((System.Drawing.Image)(resources.GetObject("btnCut.Image")));
+this.btnCut.ImageTransparentColor = System.Drawing.Color.Magenta;
+this.btnCut.LanguageKey = "editor_cuttoclipboard";
+this.btnCut.Name = "btnCut";
+this.btnDelete = new GreenshotToolStripButton();
+this.btnDelete,
+this.btnDelete.Click += new System.EventHandler(this.BtnDeleteClick);
+this.btnDelete.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+this.btnDelete.Enabled = false;
+this.btnDelete.Image = ((System.Drawing.Image)(resources.GetObject("btnDelete.Image")));
+this.btnDelete.ImageTransparentColor = System.Drawing.Color.Magenta;
+this.btnDelete.LanguageKey = "editor_deleteelement";
+this.btnDelete.Name = "btnDelete";
+this.btnEllipse = new GreenshotToolStripButton();
+this.btnEllipse,
+this.btnEllipse.CheckOnClick = true;
+this.btnEllipse.Click += new System.EventHandler(this.BtnEllipseClick);
+this.btnEllipse.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+this.btnEllipse.Image = ((System.Drawing.Image)(resources.GetObject("btnEllipse.Image")));
+this.btnEllipse.ImageTransparentColor = System.Drawing.Color.Magenta;
+this.btnEllipse.LanguageKey = "editor_drawellipse";
+this.btnEllipse.Name = "btnEllipse";
+this.btnEmoji = new GreenshotToolStripButton();
+this.btnEmoji,
+this.btnEmoji.CheckOnClick = true;
+this.btnEmoji.Click += new System.EventHandler(this.BtnEmojiClick);
+this.btnEmoji.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+this.btnEmoji.ImageTransparentColor = System.Drawing.Color.Magenta;
+this.btnEmoji.Name = "btnEmoji";
+this.btnEmoji.Text = "Emoji (M)";
+this.btnFillColor = new ToolStripColorButton();
+this.btnFillColor,
+this.btnFillColor.BackColor = System.Drawing.Color.Transparent;
+this.btnFillColor.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+this.btnFillColor.Image = ((System.Drawing.Image)(resources.GetObject("btnFillColor.Image")));
+this.btnFillColor.LanguageKey = "editor_backcolor";
+this.btnFillColor.Name = "btnFillColor";
+this.btnFillColor.SelectedColor = System.Drawing.Color.Transparent;
+this.btnFreehand = new GreenshotToolStripButton();
+this.btnFreehand,
+this.btnFreehand.Click += new System.EventHandler(this.BtnFreehandClick);
+this.btnFreehand.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+this.btnFreehand.Image = ((System.Drawing.Image)(resources.GetObject("btnFreehand.Image")));
+this.btnFreehand.ImageTransparentColor = System.Drawing.Color.Magenta;
+this.btnFreehand.LanguageKey = "editor_drawfreehand";
+this.btnFreehand.Name = "btnFreehand";
+this.btnHelp = new GreenshotToolStripButton();
+this.btnHelp.Click += new System.EventHandler(this.BtnHelpClick);
+this.btnHelp.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+this.btnHelp.Image = ((System.Drawing.Image)(resources.GetObject("btnHelp.Image")));
+this.btnHelp.ImageTransparentColor = System.Drawing.Color.Magenta;
+this.btnHelp.LanguageKey = "contextmenu_help";
+this.btnHelp.Name = "btnHelp";
+this.btnHelp.Text = "Help";
+this.btnHelp});
+this.btnHighlight = new GreenshotToolStripButton();
+this.btnHighlight,
+this.btnHighlight.Click += new System.EventHandler(this.BtnHighlightClick);
+this.btnHighlight.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+this.btnHighlight.Image = ((System.Drawing.Image)(resources.GetObject("btnHighlight.Image")));
+this.btnHighlight.ImageTransparentColor = System.Drawing.Color.Magenta;
+this.btnHighlight.LanguageKey = "editor_drawhighlighter";
+this.btnHighlight.Name = "btnHighlight";
+this.btnLine = new GreenshotToolStripButton();
+this.btnLine,
+this.btnLine.CheckOnClick = true;
+this.btnLine.Click += new System.EventHandler(this.BtnLineClick);
+this.btnLine.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+this.btnLine.Image = ((System.Drawing.Image)(resources.GetObject("btnLine.Image")));
+this.btnLine.ImageTransparentColor = System.Drawing.Color.Magenta;
+this.btnLine.LanguageKey = "editor_drawline";
+this.btnLine.Name = "btnLine";
+this.btnLineColor = new ToolStripColorButton();
+this.btnLineColor,
+this.btnLineColor.BackColor = System.Drawing.Color.Transparent;
+this.btnLineColor.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+this.btnLineColor.Image = ((System.Drawing.Image)(resources.GetObject("btnLineColor.Image")));
+this.btnLineColor.LanguageKey = "editor_forecolor";
+this.btnLineColor.Name = "btnLineColor";
+this.btnLineColor.SelectedColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(222)))), ((int)(((byte)(250)))));
+this.btnObfuscate = new GreenshotToolStripButton();
+this.btnObfuscate,
+this.btnObfuscate.Click += new System.EventHandler(this.BtnObfuscateClick);
+this.btnObfuscate.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+this.btnObfuscate.Image = ((System.Drawing.Image)(resources.GetObject("btnObfuscate.Image")));
+this.btnObfuscate.ImageTransparentColor = System.Drawing.Color.Magenta;
+this.btnObfuscate.LanguageKey = "editor_obfuscate";
+this.btnObfuscate.Name = "btnObfuscate";
+this.btnPaste = new GreenshotToolStripButton();
+this.btnPaste,
+this.btnPaste.Click += new System.EventHandler(this.BtnPasteClick);
+this.btnPaste.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+this.btnPaste.Enabled = false;
+this.btnPaste.Image = ((System.Drawing.Image)(resources.GetObject("btnPaste.Image")));
+this.btnPaste.ImageTransparentColor = System.Drawing.Color.Magenta;
+this.btnPaste.LanguageKey = "editor_pastefromclipboard";
+this.btnPaste.Name = "btnPaste";
+this.btnPrint = new GreenshotToolStripButton();
+this.btnPrint,
+this.btnPrint.Click += new System.EventHandler(this.BtnPrintClick);
+this.btnPrint.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+this.btnPrint.Image = ((System.Drawing.Image)(resources.GetObject("btnPrint.Image")));
+this.btnPrint.ImageTransparentColor = System.Drawing.Color.Magenta;
+this.btnPrint.LanguageKey = "editor_print";
+this.btnPrint.Name = "btnPrint";
+this.btnPrint.Text = "Print";
+this.btnRect = new GreenshotToolStripButton();
+this.btnRect,
+this.btnRect.CheckOnClick = true;
+this.btnRect.Click += new System.EventHandler(this.BtnRectClick);
+this.btnRect.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+this.btnRect.Image = ((System.Drawing.Image)(resources.GetObject("btnRect.Image")));
+this.btnRect.ImageTransparentColor = System.Drawing.Color.Magenta;
+this.btnRect.LanguageKey = "editor_drawrectangle";
+this.btnRect.Name = "btnRect";
+this.btnRedo = new System.Windows.Forms.ToolStripButton();
+this.btnRedo,
+this.btnRedo.Click += new System.EventHandler(this.BtnRedoClick);
+this.btnRedo.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+this.btnRedo.Enabled = false;
+this.btnRedo.Image = ((System.Drawing.Image)(resources.GetObject("btnRedo.Image")));
+this.btnRedo.ImageTransparentColor = System.Drawing.Color.Magenta;
+this.btnRedo.Name = "btnRedo";
+this.btnResize = new GreenshotToolStripButton();
+this.btnResize.Click += new System.EventHandler(this.BtnResizeClick);
+this.btnResize.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+this.btnResize.Image = ((System.Drawing.Image)(resources.GetObject("btnResize.Image")));
+this.btnResize.ImageTransparentColor = System.Drawing.Color.Magenta;
+this.btnResize.LanguageKey = "editor_resize";
+this.btnResize.Name = "btnResize";
+this.btnResize});
+this.btnSave = new GreenshotToolStripButton();
+this.btnSave,
+this.btnSave.Click += new System.EventHandler(this.BtnSaveClick);
+this.btnSave.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+this.btnSave.Image = ((System.Drawing.Image)(resources.GetObject("btnSave.Image")));
+this.btnSave.ImageTransparentColor = System.Drawing.Color.Magenta;
+this.btnSave.LanguageKey = "editor_save";
+this.btnSave.Name = "btnSave";
+this.btnSettings = new GreenshotToolStripButton();
+this.btnSettings,
+this.btnSettings.Click += new System.EventHandler(this.BtnSettingsClick);
+this.btnSettings.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+this.btnSettings.Image = ((System.Drawing.Image)(resources.GetObject("btnSettings.Image")));
+this.btnSettings.ImageTransparentColor = System.Drawing.Color.Magenta;
+this.btnSettings.LanguageKey = "contextmenu_settings";
+this.btnSettings.Name = "btnSettings";
+this.btnSpeechBubble = new GreenshotToolStripButton();
+this.btnSpeechBubble,
+this.btnSpeechBubble.CheckOnClick = true;
+this.btnSpeechBubble.Click += new System.EventHandler(this.BtnSpeechBubbleClick);
+this.btnSpeechBubble.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+this.btnSpeechBubble.Image = ((System.Drawing.Image)(resources.GetObject("btnSpeechBubble.Image")));
+this.btnSpeechBubble.ImageTransparentColor = System.Drawing.Color.Magenta;
+this.btnSpeechBubble.LanguageKey = "editor_speechbubble";
+this.btnSpeechBubble.Name = "btnSpeechBubble";
+this.btnStepLabel = new GreenshotToolStripButton();
+this.btnStepLabel,
+this.btnStepLabel.CheckOnClick = true;
+this.btnStepLabel.Click += new System.EventHandler(this.BtnStepLabelClick);
+this.btnStepLabel.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+this.btnStepLabel.Image = ((System.Drawing.Image)(resources.GetObject("btnStepLabel01.Image")));
+this.btnStepLabel.ImageTransparentColor = System.Drawing.Color.Magenta;
+this.btnStepLabel.LanguageKey = "editor_counter";
+this.btnStepLabel.Name = "btnStepLabel";
+this.btnText = new GreenshotToolStripButton();
+this.btnText,
+this.btnText.CheckOnClick = true;
+this.btnText.Click += new System.EventHandler(this.BtnTextClick);
+this.btnText.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+this.btnText.Image = ((System.Drawing.Image)(resources.GetObject("btnText.Image")));
+this.btnText.ImageTransparentColor = System.Drawing.Color.Magenta;
+this.btnText.LanguageKey = "editor_drawtextbox";
+this.btnText.Name = "btnText";
+this.btnUndo = new System.Windows.Forms.ToolStripButton();
+this.btnUndo,
+this.btnUndo.Click += new System.EventHandler(this.BtnUndoClick);
+this.btnUndo.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+this.btnUndo.Enabled = false;
+this.btnUndo.Image = ((System.Drawing.Image)(resources.GetObject("btnUndo.Image")));
+this.btnUndo.ImageTransparentColor = System.Drawing.Color.Magenta;
+this.btnUndo.Name = "btnUndo";
+this.ClientSize = new System.Drawing.Size(785, 485);
+this.closeAllToolStripMenuItem = new Greenshot.Base.Controls.GreenshotToolStripMenuItem();
+this.closeAllToolStripMenuItem.Click += new System.EventHandler(this.CloseAllToolStripMenuItemClick);
+this.closeAllToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("closeToolStripMenuItem.Image")));
+this.closeAllToolStripMenuItem.LanguageKey = "editor_close_all";
+this.closeAllToolStripMenuItem.Name = "closeAllToolStripMenuItem";
+this.closeToolStripMenuItem = new Greenshot.Base.Controls.GreenshotToolStripMenuItem();
+this.closeToolStripMenuItem.Click += new System.EventHandler(this.CloseToolStripMenuItemClick);
+this.closeToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("closeToolStripMenuItem.Image")));
+this.closeToolStripMenuItem.LanguageKey = "editor_close";
+this.closeToolStripMenuItem.Name = "closeToolStripMenuItem";
+this.closeToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.F4)));
+this.components = new System.ComponentModel.Container();
+this.Controls.Add(this.topToolStripContainer);
+this.copyPathMenuItem = new Greenshot.Base.Controls.GreenshotToolStripMenuItem();
+this.copyPathMenuItem,
+this.copyPathMenuItem.Click += new System.EventHandler(this.CopyPathMenuItemClick);
+this.copyPathMenuItem.LanguageKey = "editor_copypathtoclipboard";
+this.copyPathMenuItem.Name = "copyPathMenuItem";
+this.copyToolStripMenuItem = new Greenshot.Base.Controls.GreenshotToolStripMenuItem();
+this.copyToolStripMenuItem,
+this.copyToolStripMenuItem.Click += new System.EventHandler(this.CopyToolStripMenuItemClick);
+this.copyToolStripMenuItem.Enabled = false;
+this.copyToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("copyToolStripMenuItem.Image")));
+this.copyToolStripMenuItem.LanguageKey = "editor_copytoclipboard";
+this.copyToolStripMenuItem.Name = "copyToolStripMenuItem";
+this.copyToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.C)));
+this.counterLabel = new Greenshot.Base.Controls.GreenshotToolStripLabel();
+this.counterLabel,
+this.counterLabel.LanguageKey = "editor_counter_startvalue";
+this.counterLabel.Name = "counterLabel";
+this.counterUpDown = new ToolStripNumericUpDown();
+this.counterUpDown.DecimalPlaces = 0;
+this.counterUpDown.GotFocus += new System.EventHandler(this.ToolBarFocusableElementGotFocus);
+this.counterUpDown.Increment = 1;
+this.counterUpDown.LostFocus += new System.EventHandler(this.ToolBarFocusableElementLostFocus);
+this.counterUpDown.Maximum = 100;
+this.counterUpDown.Minimum = 0;
+this.counterUpDown.Name = "counterUpDown";
+this.counterUpDown.Text = "1";
+this.counterUpDown.Value = 1;
+this.counterUpDown});
+this.cropModeButton = new BindableToolStripDropDownButton();
+this.cropModeButton,
+this.cropModeButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+this.cropModeButton.DropDownItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.CropStyleDropDownItemClicked);
+this.cropModeButton.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+this.cropModeButton.Image = ((System.Drawing.Image)(resources.GetObject("btnCrop.Image")));
+this.cropModeButton.ImageTransparentColor = System.Drawing.Color.Magenta;
+this.cropModeButton.LanguageKey = "editor_crop_mode";
+this.cropModeButton.Name = "cropModeButton";
+this.cropModeButton.SelectedTag = CropContainer.CropModes.Default;
+this.cropModeButton.Tag = CropContainer.CropModes.Default;
+this.cutToolStripMenuItem = new Greenshot.Base.Controls.GreenshotToolStripMenuItem();
+this.cutToolStripMenuItem,
+this.cutToolStripMenuItem.Click += new System.EventHandler(this.CutToolStripMenuItemClick);
+this.cutToolStripMenuItem.Enabled = false;
+this.cutToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("cutToolStripMenuItem.Image")));
+this.cutToolStripMenuItem.LanguageKey = "editor_cuttoclipboard";
+this.cutToolStripMenuItem.Name = "cutToolStripMenuItem";
+this.cutToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.X)));
+this.defaultCropModeToolStripMenuItem = new Greenshot.Base.Controls.GreenshotToolStripMenuItem();
+this.defaultCropModeToolStripMenuItem,
+this.defaultCropModeToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("btnCrop.Image")));
+this.defaultCropModeToolStripMenuItem.LanguageKey = "editor_cropmode_default";
+this.defaultCropModeToolStripMenuItem.Name = "defaultCropModeToolStripMenuItem";
+this.defaultCropModeToolStripMenuItem.Tag = CropContainer.CropModes.Default;
+this.destinationsToolStrip = new ToolStripEx();
+this.destinationsToolStrip.BackColor = System.Drawing.SystemColors.Control;
+this.destinationsToolStrip.ClickThrough = true;
+this.destinationsToolStrip.Dock = System.Windows.Forms.DockStyle.Fill;
+this.destinationsToolStrip.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden;
+this.destinationsToolStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+this.destinationsToolStrip.Name = "toolStrip1";
+this.destinationsToolStrip.OverflowButton.DropDown.BackColor = System.Drawing.SystemColors.Control;
+this.destinationsToolStrip.ResumeLayout(true);
+this.destinationsToolStrip.Stretch = true;
+this.destinationsToolStrip.SuspendLayout();
+this.destinationsToolStrip.TabIndex = 0;
+this.dimensionsLabel = new System.Windows.Forms.ToolStripStatusLabel();
+this.dimensionsLabel,
+this.dimensionsLabel.BorderSides = ((System.Windows.Forms.ToolStripStatusLabelBorderSides)((((System.Windows.Forms.ToolStripStatusLabelBorderSides.Left | System.Windows.Forms.ToolStripStatusLabelBorderSides.Top)
+this.dimensionsLabel.BorderStyle = System.Windows.Forms.Border3DStyle.Sunken;
+this.dimensionsLabel.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+this.dimensionsLabel.Name = "dimensionsLabel";
+this.dimensionsLabel.Text = "123x321";
+this.downOneLevelToolStripMenuItem = new Greenshot.Base.Controls.GreenshotToolStripMenuItem();
+this.downOneLevelToolStripMenuItem,
+this.downOneLevelToolStripMenuItem.Click += new System.EventHandler(this.DownOneLevelToolStripMenuItemClick);
+this.downOneLevelToolStripMenuItem.Enabled = false;
+this.downOneLevelToolStripMenuItem.LanguageKey = "editor_downonelevel";
+this.downOneLevelToolStripMenuItem.Name = "downOneLevelToolStripMenuItem";
+this.downOneLevelToolStripMenuItem.ShortcutKeyDisplayString = "PgDn";
+this.downToBottomToolStripMenuItem = new Greenshot.Base.Controls.GreenshotToolStripMenuItem();
+this.downToBottomToolStripMenuItem.Click += new System.EventHandler(this.DownToBottomToolStripMenuItemClick);
+this.downToBottomToolStripMenuItem.Enabled = false;
+this.downToBottomToolStripMenuItem.LanguageKey = "editor_downtobottom";
+this.downToBottomToolStripMenuItem.Name = "downToBottomToolStripMenuItem";
+this.downToBottomToolStripMenuItem.ShortcutKeyDisplayString = "End";
+this.downToBottomToolStripMenuItem});
+this.drawArrowToolStripMenuItem = new Greenshot.Base.Controls.GreenshotToolStripMenuItem();
+this.drawArrowToolStripMenuItem,
+this.drawArrowToolStripMenuItem.Click += new System.EventHandler(this.DrawArrowToolStripMenuItemClick);
+this.drawArrowToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("drawArrowToolStripMenuItem.Image")));
+this.drawArrowToolStripMenuItem.LanguageKey = "editor_drawarrow";
+this.drawArrowToolStripMenuItem.Name = "drawArrowToolStripMenuItem";
+this.drawFreehandToolStripMenuItem = new Greenshot.Base.Controls.GreenshotToolStripMenuItem();
+this.drawFreehandToolStripMenuItem,
+this.drawFreehandToolStripMenuItem.Click += new System.EventHandler(this.DrawFreehandToolStripMenuItemClick);
+this.drawFreehandToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("drawFreehandToolStripMenuItem.Image")));
+this.drawFreehandToolStripMenuItem.LanguageKey = "editor_drawfreehand";
+this.drawFreehandToolStripMenuItem.Name = "drawFreehandToolStripMenuItem";
+this.drawLineToolStripMenuItem = new Greenshot.Base.Controls.GreenshotToolStripMenuItem();
+this.drawLineToolStripMenuItem,
+this.drawLineToolStripMenuItem.Click += new System.EventHandler(this.DrawLineToolStripMenuItemClick);
+this.drawLineToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("drawLineToolStripMenuItem.Image")));
+this.drawLineToolStripMenuItem.LanguageKey = "editor_drawline";
+this.drawLineToolStripMenuItem.Name = "drawLineToolStripMenuItem";
+this.duplicateToolStripMenuItem = new Greenshot.Base.Controls.GreenshotToolStripMenuItem();
+this.duplicateToolStripMenuItem,
+this.duplicateToolStripMenuItem.Click += new System.EventHandler(this.DuplicateToolStripMenuItemClick);
+this.duplicateToolStripMenuItem.Enabled = false;
+this.duplicateToolStripMenuItem.LanguageKey = "editor_duplicate";
+this.duplicateToolStripMenuItem.Name = "duplicateToolStripMenuItem";
+this.duplicateToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.D)));
+this.editToolStripMenuItem = new Greenshot.Base.Controls.GreenshotToolStripMenuItem();
+this.editToolStripMenuItem,
+this.editToolStripMenuItem.Click += new System.EventHandler(this.EditToolStripMenuItemClick);
+this.editToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+this.editToolStripMenuItem.LanguageKey = "editor_edit";
+this.editToolStripMenuItem.Name = "editToolStripMenuItem";
+this.editToolStripMenuItem.Size = new System.Drawing.Size(39, 20);
+this.editToolStripMenuItem.Text = "Edit";
+this.fileSavedStatusContextMenu = new System.Windows.Forms.ContextMenuStrip(this.components);
+this.fileSavedStatusContextMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+this.fileSavedStatusContextMenu.Name = "contextMenuStrip1";
+this.fileSavedStatusContextMenu.ResumeLayout(true);
+this.fileSavedStatusContextMenu.SuspendLayout();
+this.fileStripMenuItem = new Greenshot.Base.Controls.GreenshotToolStripMenuItem();
+this.fileStripMenuItem,
+this.fileStripMenuItem.DropDownItems.Add(toolStripSeparator9);
+this.fileStripMenuItem.DropDownOpening += new System.EventHandler(this.FileMenuDropDownOpening);
+this.fileStripMenuItem.LanguageKey = "editor_file";
+this.fileStripMenuItem.Name = "fileStripMenuItem";
+this.fileStripMenuItem.Size = new System.Drawing.Size(37, 20);
+this.fileStripMenuItem.Text = "File";
+this.fontBoldButton = new BindableToolStripButton();
+this.fontBoldButton,
+this.fontBoldButton.CheckOnClick = true;
+this.fontBoldButton.Click += new System.EventHandler(this.FontBoldButtonClick);
+this.fontBoldButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+this.fontBoldButton.Image = ((System.Drawing.Image)(resources.GetObject("fontBoldButton.Image")));
+this.fontBoldButton.ImageTransparentColor = System.Drawing.Color.Magenta;
+this.fontBoldButton.LanguageKey = "editor_bold";
+this.fontBoldButton.Name = "fontBoldButton";
+this.fontBoldButton.Text = "Bold";
+this.fontFamilyComboBox = new FontFamilyComboBox();
+this.fontFamilyComboBox,
+this.fontFamilyComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+this.fontFamilyComboBox.GotFocus += new System.EventHandler(this.ToolBarFocusableElementGotFocus);
+this.fontFamilyComboBox.LostFocus += new System.EventHandler(this.ToolBarFocusableElementLostFocus);
+this.fontFamilyComboBox.MaxDropDownItems = 20;
+this.fontFamilyComboBox.Name = "fontFamilyComboBox";
+this.fontFamilyComboBox.Padding = new System.Windows.Forms.Padding(2,0,0,2);
+this.fontFamilyComboBox.PropertyChanged += new System.ComponentModel.PropertyChangedEventHandler(this.FontPropertyChanged);
+this.fontFamilyComboBox.Size = new System.Drawing.Size(200, 20);
+this.fontFamilyComboBox.Text = "Aharoni";
+this.fontItalicButton = new BindableToolStripButton();
+this.fontItalicButton,
+this.fontItalicButton.CheckOnClick = true;
+this.fontItalicButton.Click += new System.EventHandler(this.FontItalicButtonClick);
+this.fontItalicButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+this.fontItalicButton.Image = ((System.Drawing.Image)(resources.GetObject("fontItalicButton.Image")));
+this.fontItalicButton.ImageTransparentColor = System.Drawing.Color.Magenta;
+this.fontItalicButton.LanguageKey = "editor_italic";
+this.fontItalicButton.Name = "fontItalicButton";
+this.fontItalicButton.Text = "Italic";
+this.fontSizeLabel = new Greenshot.Base.Controls.GreenshotToolStripLabel();
+this.fontSizeLabel,
+this.fontSizeLabel.LanguageKey = "editor_fontsize";
+this.fontSizeLabel.Name = "fontSizeLabel";
+this.fontSizeUpDown = new ToolStripNumericUpDown();
+this.fontSizeUpDown,
+this.fontSizeUpDown.DecimalPlaces = 0;
+this.fontSizeUpDown.GotFocus += new System.EventHandler(this.ToolBarFocusableElementGotFocus);
+this.fontSizeUpDown.Increment = new decimal(new int[] {
+this.fontSizeUpDown.LostFocus += new System.EventHandler(this.ToolBarFocusableElementLostFocus);
+this.fontSizeUpDown.Maximum = new decimal(new int[] {
+this.fontSizeUpDown.Minimum = new decimal(new int[] {
+this.fontSizeUpDown.Name = "fontSizeUpDown";
+this.fontSizeUpDown.Text = "12";
+this.fontSizeUpDown.Value = new decimal(new int[] {
+this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.ImageEditorFormFormClosing);
+this.grayscaleHighlightMenuItem = new Greenshot.Base.Controls.GreenshotToolStripMenuItem();
+this.grayscaleHighlightMenuItem,
+this.grayscaleHighlightMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("grayscaleHighlightMenuItem.Image")));
+this.grayscaleHighlightMenuItem.LanguageKey = "editor_highlight_grayscale";
+this.grayscaleHighlightMenuItem.Name = "grayscaleHighlightMenuItem";
+this.grayscaleHighlightMenuItem.Tag = FilterContainer.PreparedFilter.GRAYSCALE;
+this.grayscaleToolStripMenuItem = new Greenshot.Base.Controls.GreenshotToolStripMenuItem();
+this.grayscaleToolStripMenuItem,
+this.grayscaleToolStripMenuItem.Click += new System.EventHandler(this.GrayscaleToolStripMenuItemClick);
+this.grayscaleToolStripMenuItem.LanguageKey = "editor_grayscale";
+this.grayscaleToolStripMenuItem.Name = "grayscaleToolStripMenuItem";
+this.helpToolStripMenuItem = new Greenshot.Base.Controls.GreenshotToolStripMenuItem();
+this.helpToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+this.helpToolStripMenuItem.LanguageKey = "contextmenu_help";
+this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
+this.helpToolStripMenuItem.Text = "Help";
+this.helpToolStripMenuItem1 = new Greenshot.Base.Controls.GreenshotToolStripMenuItem();
+this.helpToolStripMenuItem1,
+this.helpToolStripMenuItem1.Click += new System.EventHandler(this.HelpToolStripMenuItem1Click);
+this.helpToolStripMenuItem1.Image = ((System.Drawing.Image)(resources.GetObject("helpToolStripMenuItem1.Image")));
+this.helpToolStripMenuItem1.LanguageKey = "contextmenu_help";
+this.helpToolStripMenuItem1.Name = "helpToolStripMenuItem1";
+this.helpToolStripMenuItem1.ShortcutKeys = System.Windows.Forms.Keys.F1;
+this.helpToolStripMenuItem});
+this.highlightModeButton = new BindableToolStripDropDownButton();
+this.highlightModeButton,
+this.highlightModeButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+this.highlightModeButton.DropDownItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.FilterPresetDropDownItemClicked);
+this.highlightModeButton.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+this.highlightModeButton.Image = ((System.Drawing.Image)(resources.GetObject("highlightModeButton.Image")));
+this.highlightModeButton.ImageTransparentColor = System.Drawing.Color.Magenta;
+this.highlightModeButton.LanguageKey = "editor_highlight_mode";
+this.highlightModeButton.Name = "highlightModeButton";
+this.highlightModeButton.SelectedTag = FilterContainer.PreparedFilter.TEXT_HIGHTLIGHT;
+this.highlightModeButton.Tag = FilterContainer.PreparedFilter.TEXT_HIGHTLIGHT;
+this.horizontalCropModeToolStripMenuItem = new Greenshot.Base.Controls.GreenshotToolStripMenuItem();
+this.horizontalCropModeToolStripMenuItem,
+this.horizontalCropModeToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("CropHorizontal.Image")));
+this.horizontalCropModeToolStripMenuItem.LanguageKey = "editor_cropmode_horizontal";
+this.horizontalCropModeToolStripMenuItem.Name = "horizontalCropModeToolStripMenuItem";
+this.horizontalCropModeToolStripMenuItem.Tag = CropContainer.CropModes.Horizontal;
+this.insert_window_toolstripmenuitem = new Greenshot.Base.Controls.GreenshotToolStripMenuItem();
+this.insert_window_toolstripmenuitem.LanguageKey = "editor_insertwindow";
+this.insert_window_toolstripmenuitem.MouseEnter += new System.EventHandler(this.Insert_window_toolstripmenuitemMouseEnter);
+this.insert_window_toolstripmenuitem.Name = "insert_window_toolstripmenuitem";
+this.insert_window_toolstripmenuitem});
+this.invertToolStripMenuItem = new Greenshot.Base.Controls.GreenshotToolStripMenuItem();
+this.invertToolStripMenuItem,
+this.invertToolStripMenuItem.Click += new System.EventHandler(this.InvertToolStripMenuItemClick);
+this.invertToolStripMenuItem.LanguageKey = "editor_invert";
+this.invertToolStripMenuItem.Name = "invertToolStripMenuItem";
+this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.ImageEditorFormKeyDown);
+this.KeyPreview = true;
+this.LanguageKey = "editor_title";
+this.lineThicknessLabel = new Greenshot.Base.Controls.GreenshotToolStripLabel();
+this.lineThicknessLabel,
+this.lineThicknessLabel.LanguageKey = "editor_thickness";
+this.lineThicknessLabel.Name = "lineThicknessLabel";
+this.lineThicknessUpDown = new ToolStripNumericUpDown();
+this.lineThicknessUpDown,
+this.lineThicknessUpDown.DecimalPlaces = 0;
+this.lineThicknessUpDown.GotFocus += new System.EventHandler(this.ToolBarFocusableElementGotFocus);
+this.lineThicknessUpDown.Increment = new decimal(new int[] {
+this.lineThicknessUpDown.LostFocus += new System.EventHandler(this.ToolBarFocusableElementLostFocus);
+this.lineThicknessUpDown.Maximum = new decimal(new int[] {
+this.lineThicknessUpDown.Minimum = new decimal(new int[] {
+this.lineThicknessUpDown.Name = "lineThicknessUpDown";
+this.lineThicknessUpDown.Text = "0";
+this.lineThicknessUpDown.Value = new decimal(new int[] {
+this.loadElementsToolStripMenuItem = new Greenshot.Base.Controls.GreenshotToolStripMenuItem();
+this.loadElementsToolStripMenuItem.Click += new System.EventHandler(this.LoadElementsToolStripMenuItemClick);
+this.loadElementsToolStripMenuItem.LanguageKey = "editor_load_objects";
+this.loadElementsToolStripMenuItem.Name = "loadElementsToolStripMenuItem";
+this.loadElementsToolStripMenuItem});
+this.magnificationFactorLabel = new Greenshot.Base.Controls.GreenshotToolStripLabel();
+this.magnificationFactorLabel,
+this.magnificationFactorLabel.LanguageKey = "editor_magnification_factor";
+this.magnificationFactorLabel.Name = "magnificationFactorLabel";
+this.magnificationFactorLabel.Tag = FilterContainer.PreparedFilter.MAGNIFICATION;
+this.magnificationFactorUpDown = new ToolStripNumericUpDown();
+this.magnificationFactorUpDown,
+this.magnificationFactorUpDown.DecimalPlaces = 0;
+this.magnificationFactorUpDown.GotFocus += new System.EventHandler(this.ToolBarFocusableElementGotFocus);
+this.magnificationFactorUpDown.Increment = new decimal(new int[] {
+this.magnificationFactorUpDown.LostFocus += new System.EventHandler(this.ToolBarFocusableElementLostFocus);
+this.magnificationFactorUpDown.Maximum = new decimal(new int[] {
+this.magnificationFactorUpDown.Minimum = new decimal(new int[] {
+this.magnificationFactorUpDown.Name = "magnificationFactorUpDown";
+this.magnificationFactorUpDown.Text = "2";
+this.magnificationFactorUpDown.Value = new decimal(new int[] {
+this.magnifyMenuItem = new Greenshot.Base.Controls.GreenshotToolStripMenuItem();
+this.magnifyMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("magnifyMenuItem.Image")));
+this.magnifyMenuItem.LanguageKey = "editor_highlight_magnify";
+this.magnifyMenuItem.Name = "magnifyMenuItem";
+this.magnifyMenuItem.Tag = FilterContainer.PreparedFilter.MAGNIFICATION;
+this.magnifyMenuItem});
+this.menuStrip1 = new MenuStripEx();
+this.menuStrip1.BackColor = System.Drawing.SystemColors.Control;
+this.menuStrip1.ClickThrough = true;
+this.menuStrip1.Dock = System.Windows.Forms.DockStyle.Fill;
+this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+this.menuStrip1.Name = "menuStrip1";
+this.menuStrip1.ResumeLayout(true);
+this.menuStrip1.Stretch = true;
+this.menuStrip1.SuspendLayout();
+this.menuStrip1.TabIndex = 1;
+this.Name = "ImageEditorForm";
+this.obfuscateModeButton = new BindableToolStripDropDownButton();
+this.obfuscateModeButton,
+this.obfuscateModeButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+this.obfuscateModeButton.DropDownItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.FilterPresetDropDownItemClicked);
+this.obfuscateModeButton.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+this.obfuscateModeButton.Image = ((System.Drawing.Image)(resources.GetObject("obfuscateModeButton.Image")));
+this.obfuscateModeButton.ImageTransparentColor = System.Drawing.Color.Magenta;
+this.obfuscateModeButton.LanguageKey = "editor_obfuscate_mode";
+this.obfuscateModeButton.Name = "obfuscateModeButton";
+this.obfuscateModeButton.SelectedTag = FilterContainer.PreparedFilter.BLUR;
+this.obfuscateModeButton.Tag = FilterContainer.PreparedFilter.BLUR;
+this.obfuscateTextToolStripMenuItem
+this.obfuscateTextToolStripMenuItem = new Greenshot.Base.Controls.GreenshotToolStripMenuItem();
+this.obfuscateTextToolStripMenuItem.Click += new System.EventHandler(this.ObfuscateTextToolStripMenuItemClick);
+this.obfuscateTextToolStripMenuItem.LanguageKey = "editor_obfuscate_text";
+this.obfuscateTextToolStripMenuItem.Name = "obfuscateTextToolStripMenuItem";
+this.objectToolStripMenuItem = new Greenshot.Base.Controls.GreenshotToolStripMenuItem();
+this.objectToolStripMenuItem,
+this.objectToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+this.objectToolStripMenuItem.LanguageKey = "editor_object";
+this.objectToolStripMenuItem.Name = "objectToolStripMenuItem";
+this.objectToolStripMenuItem.Size = new System.Drawing.Size(54, 20);
+this.objectToolStripMenuItem.Text = "Object";
+this.openDirectoryMenuItem = new Greenshot.Base.Controls.GreenshotToolStripMenuItem();
+this.openDirectoryMenuItem.Click += new System.EventHandler(this.OpenDirectoryMenuItemClick);
+this.openDirectoryMenuItem.LanguageKey = "editor_opendirinexplorer";
+this.openDirectoryMenuItem.Name = "openDirectoryMenuItem";
+this.openDirectoryMenuItem});
+this.panel1 = new NonJumpingPanel();
+this.panel1.AutoScroll = true;
+this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+this.panel1.Location = new System.Drawing.Point(3, 3);
+this.panel1.Name = "panel1";
+this.panel1.Size = new System.Drawing.Size(755, 379);
+this.panel1.TabIndex = 2;
+this.pasteToolStripMenuItem = new Greenshot.Base.Controls.GreenshotToolStripMenuItem();
+this.pasteToolStripMenuItem,
+this.pasteToolStripMenuItem.Click += new System.EventHandler(this.PasteToolStripMenuItemClick);
+this.pasteToolStripMenuItem.Enabled = false;
+this.pasteToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("pasteToolStripMenuItem.Image")));
+this.pasteToolStripMenuItem.LanguageKey = "editor_pastefromclipboard";
+this.pasteToolStripMenuItem.Name = "pasteToolStripMenuItem";
+this.pasteToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.V)));
+this.pixelizeToolStripMenuItem = new Greenshot.Base.Controls.GreenshotToolStripMenuItem();
+this.pixelizeToolStripMenuItem,
+this.pixelizeToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("pixelizeToolStripMenuItem.Image")));
+this.pixelizeToolStripMenuItem.LanguageKey = "editor_obfuscate_pixelize";
+this.pixelizeToolStripMenuItem.Name = "pixelizeToolStripMenuItem";
+this.pixelizeToolStripMenuItem.Tag = FilterContainer.PreparedFilter.PIXELIZE;
+this.pixelSizeLabel = new Greenshot.Base.Controls.GreenshotToolStripLabel();
+this.pixelSizeLabel,
+this.pixelSizeLabel.LanguageKey = "editor_pixel_size";
+this.pixelSizeLabel.Name = "pixelSizeLabel";
+this.pixelSizeUpDown = new ToolStripNumericUpDown();
+this.pixelSizeUpDown,
+this.pixelSizeUpDown.DecimalPlaces = 0;
+this.pixelSizeUpDown.GotFocus += new System.EventHandler(this.ToolBarFocusableElementGotFocus);
+this.pixelSizeUpDown.Increment = new decimal(new int[] {
+this.pixelSizeUpDown.LostFocus += new System.EventHandler(this.ToolBarFocusableElementLostFocus);
+this.pixelSizeUpDown.Maximum = new decimal(new int[] {
+this.pixelSizeUpDown.Minimum = new decimal(new int[] {
+this.pixelSizeUpDown.Name = "pixelSizeUpDown";
+this.pixelSizeUpDown.Text = "5";
+this.pixelSizeUpDown.Value = new decimal(new int[] {
+this.pluginToolStripMenuItem = new Greenshot.Base.Controls.GreenshotToolStripMenuItem();
+this.pluginToolStripMenuItem,
+this.pluginToolStripMenuItem.LanguageKey = "settings_plugins";
+this.pluginToolStripMenuItem.Name = "pluginToolStripMenuItem";
+this.pluginToolStripMenuItem.Text = "Plugins";
+this.pluginToolStripMenuItem.Visible = false;
+this.preferencesToolStripMenuItem = new Greenshot.Base.Controls.GreenshotToolStripMenuItem();
+this.preferencesToolStripMenuItem,
+this.preferencesToolStripMenuItem.Click += new System.EventHandler(this.PreferencesToolStripMenuItemClick);
+this.preferencesToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("preferencesToolStripMenuItem.Image")));
+this.preferencesToolStripMenuItem.LanguageKey = "contextmenu_settings";
+this.preferencesToolStripMenuItem.Name = "preferencesToolStripMenuItem";
+this.previewQualityLabel = new Greenshot.Base.Controls.GreenshotToolStripLabel();
+this.previewQualityLabel,
+this.previewQualityLabel.LanguageKey = "editor_preview_quality";
+this.previewQualityLabel.Name = "previewQualityLabel";
+this.previewQualityLabel.Text = "Preview quality";
+this.previewQualityUpDown = new ToolStripNumericUpDown();
+this.previewQualityUpDown,
+this.previewQualityUpDown.DecimalPlaces = 0;
+this.previewQualityUpDown.GotFocus += new System.EventHandler(this.ToolBarFocusableElementGotFocus);
+this.previewQualityUpDown.Increment = new decimal(new int[] {
+this.previewQualityUpDown.LostFocus += new System.EventHandler(this.ToolBarFocusableElementLostFocus);
+this.previewQualityUpDown.Maximum = new decimal(new int[] {
+this.previewQualityUpDown.Minimum = new decimal(new int[] {
+this.previewQualityUpDown.Name = "previewQualityUpDown";
+this.previewQualityUpDown.Text = "50";
+this.previewQualityUpDown.Value = new decimal(new int[] {
+this.propertiesToolStrip = new ToolStripEx();
+this.propertiesToolStrip.BackColor = System.Drawing.SystemColors.Control;
+this.propertiesToolStrip.ClickThrough = true;
+this.propertiesToolStrip.Dock = System.Windows.Forms.DockStyle.Fill;
+this.propertiesToolStrip.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden;
+this.propertiesToolStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+this.propertiesToolStrip.Name = "propertiesToolStrip";
+this.propertiesToolStrip.OverflowButton.DropDown.BackColor = System.Drawing.SystemColors.Control;
+this.propertiesToolStrip.Paint += new System.Windows.Forms.PaintEventHandler(this.PropertiesToolStrip_Paint);
+this.propertiesToolStrip.ResumeLayout(true);
+this.propertiesToolStrip.Stretch = true;
+this.propertiesToolStrip.SuspendLayout();
+this.propertiesToolStrip.TabIndex = 2;
+this.redoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+this.redoToolStripMenuItem,
+this.redoToolStripMenuItem.Click += new System.EventHandler(this.RedoToolStripMenuItemClick);
+this.redoToolStripMenuItem.Enabled = false;
+this.redoToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("redoToolStripMenuItem.Image")));
+this.redoToolStripMenuItem.Name = "redoToolStripMenuItem";
+this.redoToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Y)));
+this.redoToolStripMenuItem.Text = "Redo";
+this.removeObjectToolStripMenuItem = new Greenshot.Base.Controls.GreenshotToolStripMenuItem();
+this.removeObjectToolStripMenuItem,
+this.removeObjectToolStripMenuItem.Click += new System.EventHandler(this.RemoveObjectToolStripMenuItemClick);
+this.removeObjectToolStripMenuItem.Enabled = false;
+this.removeObjectToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("removeObjectToolStripMenuItem.Image")));
+this.removeObjectToolStripMenuItem.LanguageKey = "editor_deleteelement";
+this.removeObjectToolStripMenuItem.Name = "removeObjectToolStripMenuItem";
+this.removeObjectToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.Delete;
+this.removeTransparencyToolStripMenuItem = new Greenshot.Base.Controls.GreenshotToolStripMenuItem();
+this.removeTransparencyToolStripMenuItem,
+this.removeTransparencyToolStripMenuItem.Click += new System.EventHandler(this.RemoveTransparencyToolStripMenuItemClick);
+this.removeTransparencyToolStripMenuItem.LanguageKey = "editor_remove_transparency";
+this.removeTransparencyToolStripMenuItem.Name = "removeTransparencyToolStripMenuItem";
+this.Resize += new System.EventHandler(this.ImageEditorFormResize);
+this.ResumeLayout(false);
+this.rotateCcwToolstripButton = new GreenshotToolStripButton();
+this.rotateCcwToolstripButton,
+this.rotateCcwToolstripButton.Click += new System.EventHandler(this.RotateCcwToolstripButtonClick);
+this.rotateCcwToolstripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+this.rotateCcwToolstripButton.Image = ((System.Drawing.Image)(resources.GetObject("rotateCcwToolstripButton.Image")));
+this.rotateCcwToolstripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
+this.rotateCcwToolstripButton.LanguageKey = "editor_rotateccw";
+this.rotateCcwToolstripButton.Name = "rotateCcwToolstripButton";
+this.rotateCwToolstripButton = new GreenshotToolStripButton();
+this.rotateCwToolstripButton,
+this.rotateCwToolstripButton.Click += new System.EventHandler(this.RotateCwToolstripButtonClick);
+this.rotateCwToolstripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+this.rotateCwToolstripButton.Image = ((System.Drawing.Image)(resources.GetObject("rotateCwToolstripButton.Image")));
+this.rotateCwToolstripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
+this.rotateCwToolstripButton.LanguageKey = "editor_rotatecw";
+this.rotateCwToolstripButton.Name = "rotateCwToolstripButton";
+this.saveElementsToolStripMenuItem = new Greenshot.Base.Controls.GreenshotToolStripMenuItem();
+this.saveElementsToolStripMenuItem,
+this.saveElementsToolStripMenuItem.Click += new System.EventHandler(this.SaveElementsToolStripMenuItemClick);
+this.saveElementsToolStripMenuItem.LanguageKey = "editor_save_objects";
+this.saveElementsToolStripMenuItem.Name = "saveElementsToolStripMenuItem";
+this.selectAllToolStripMenuItem = new Greenshot.Base.Controls.GreenshotToolStripMenuItem();
+this.selectAllToolStripMenuItem,
+this.selectAllToolStripMenuItem.Click += new System.EventHandler(this.SelectAllToolStripMenuItemClick);
+this.selectAllToolStripMenuItem.LanguageKey = "editor_selectall";
+this.selectAllToolStripMenuItem.Name = "selectAllToolStripMenuItem";
+this.selectAllToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.A)));
+this.shadowButton = new BindableToolStripButton();
+this.shadowButton,
+this.shadowButton.CheckOnClick = true;
+this.shadowButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+this.shadowButton.Image = ((System.Drawing.Image)(resources.GetObject("shadowButton.Image")));
+this.shadowButton.ImageTransparentColor = System.Drawing.Color.Magenta;
+this.shadowButton.LanguageKey = "editor_shadow";
+this.shadowButton.Name = "shadowButton";
+this.statusLabel = new System.Windows.Forms.ToolStripStatusLabel();
+this.statusLabel,
+this.statusLabel.BorderSides = ((System.Windows.Forms.ToolStripStatusLabelBorderSides)((((System.Windows.Forms.ToolStripStatusLabelBorderSides.Left | System.Windows.Forms.ToolStripStatusLabelBorderSides.Top)
+this.statusLabel.BorderStyle = System.Windows.Forms.Border3DStyle.Sunken;
+this.statusLabel.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+this.statusLabel.MouseDown += new System.Windows.Forms.MouseEventHandler(this.StatusLabelClicked);
+this.statusLabel.Name = "statusLabel";
+this.statusStrip1 = new System.Windows.Forms.StatusStrip();
+this.statusStrip1.Dock = System.Windows.Forms.DockStyle.None;
+this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+this.statusStrip1.Location = new System.Drawing.Point(0, 0);
+this.statusStrip1.Name = "statusStrip1";
+this.statusStrip1.ResumeLayout(true);
+this.statusStrip1.Size = new System.Drawing.Size(785, 24);
+this.statusStrip1.SuspendLayout();
+this.statusStrip1.TabIndex = 3;
+this.statusStrip1.Text = "statusStrip1";
+this.statusStripSpacer = new System.Windows.Forms.ToolStripStatusLabel();
+this.statusStripSpacer,
+this.statusStripSpacer.Name = "statusStripSpacer";
+this.statusStripSpacer.Size = new System.Drawing.Size(599, 19);
+this.statusStripSpacer.Spring = true;
+this.SuspendLayout();
+this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+this.tableLayoutPanel1.BackColor = System.Drawing.SystemColors.Control;
+this.tableLayoutPanel1.ColumnCount = 1;
+this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+this.tableLayoutPanel1.Controls.Add(this.panel1, 0, 0);
+this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
+this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+this.tableLayoutPanel1.ResumeLayout(true);
+this.tableLayoutPanel1.RowCount = 1;
+this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
+this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 385F));
+this.tableLayoutPanel1.Size = new System.Drawing.Size(761, 385);
+this.tableLayoutPanel1.SuspendLayout();
+this.tableLayoutPanel1.TabIndex = 3;
+this.textHighlightMenuItem = new Greenshot.Base.Controls.GreenshotToolStripMenuItem();
+this.textHighlightMenuItem,
+this.textHighlightMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("textHighlightMenuItem.Image")));
+this.textHighlightMenuItem.LanguageKey = "editor_highlight_text";
+this.textHighlightMenuItem.Name = "textHighlightMenuItem";
+this.textHighlightMenuItem.Tag = FilterContainer.PreparedFilter.TEXT_HIGHTLIGHT;
+this.textHorizontalAlignmentButton = new BindableToolStripDropDownButton();
+this.textHorizontalAlignmentButton,
+this.textHorizontalAlignmentButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+this.textHorizontalAlignmentButton.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+this.textHorizontalAlignmentButton.Image = ((System.Drawing.Image)(resources.GetObject("btnAlignCenter.Image")));
+this.textHorizontalAlignmentButton.ImageTransparentColor = System.Drawing.Color.Magenta;
+this.textHorizontalAlignmentButton.LanguageKey = "editor_align_horizontal";
+this.textHorizontalAlignmentButton.Name = "textHorizontalAlignmentButton";
+this.textHorizontalAlignmentButton.SelectedTag = System.Drawing.StringAlignment.Center;
+this.textHorizontalAlignmentButton.Tag = System.Drawing.StringAlignment.Center;
+this.textVerticalAlignmentButton = new BindableToolStripDropDownButton();
+this.textVerticalAlignmentButton,
+this.textVerticalAlignmentButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+this.textVerticalAlignmentButton.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+this.textVerticalAlignmentButton.Image = ((System.Drawing.Image)(resources.GetObject("btnAlignMiddle.Image")));
+this.textVerticalAlignmentButton.ImageTransparentColor = System.Drawing.Color.Magenta;
+this.textVerticalAlignmentButton.LanguageKey = "editor_align_vertical";
+this.textVerticalAlignmentButton.Name = "textVerticalAlignmentButton";
+this.textVerticalAlignmentButton.SelectedTag = System.Drawing.StringAlignment.Center;
+this.textVerticalAlignmentButton.Tag = System.Drawing.StringAlignment.Center;
+this.toolsToolStrip = new ToolStripEx();
+this.toolsToolStrip.BackColor = System.Drawing.SystemColors.Control;
+this.toolsToolStrip.ClickThrough = true;
+this.toolsToolStrip.Dock = System.Windows.Forms.DockStyle.None;
+this.toolsToolStrip.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden;
+this.toolsToolStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+this.toolsToolStrip.Name = "toolsToolStrip";
+this.toolsToolStrip.OverflowButton.DropDown.BackColor = System.Drawing.SystemColors.Control;
+this.toolsToolStrip.ResumeLayout(true);
+this.toolsToolStrip.Stretch = true;
+this.toolsToolStrip.SuspendLayout();
+this.toolsToolStrip.TabIndex = 0;
+this.toolStripSeparator = new System.Windows.Forms.ToolStripSeparator();
+this.toolStripSeparator,
+this.toolStripSeparator.Name = "toolStripSeparator";
+this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+this.toolStripSeparator1,
+this.toolStripSeparator1.Name = "toolStripSeparator1";
+this.toolStripSeparator10 = new System.Windows.Forms.ToolStripSeparator();
+this.toolStripSeparator10,
+this.toolStripSeparator10.Name = "toolStripSeparator10";
+this.toolStripSeparator11 = new System.Windows.Forms.ToolStripSeparator();
+this.toolStripSeparator11,
+this.toolStripSeparator11.Name = "toolStripSeparator11";
+this.toolStripSeparator12 = new System.Windows.Forms.ToolStripSeparator();
+this.toolStripSeparator12,
+this.toolStripSeparator12.Name = "toolStripSeparator12";
+this.toolStripSeparator13 = new System.Windows.Forms.ToolStripSeparator();
+this.toolStripSeparator13,
+this.toolStripSeparator13.Name = "toolStripSeparator13";
+this.toolStripSeparator14 = new System.Windows.Forms.ToolStripSeparator();
+this.toolStripSeparator14,
+this.toolStripSeparator14.Name = "toolStripSeparator14";
+this.toolStripSeparator15 = new System.Windows.Forms.ToolStripSeparator();
+this.toolStripSeparator15,
+this.toolStripSeparator15.Name = "toolStripSeparator15";
+this.toolStripSeparator16 = new System.Windows.Forms.ToolStripSeparator();
+this.toolStripSeparator16,
+this.toolStripSeparator16.Name = "toolStripSeparator16";
+this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
+this.toolStripSeparator2,
+this.toolStripSeparator2.Name = "toolStripSeparator2";
+this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
+this.toolStripSeparator3,
+this.toolStripSeparator3.Name = "toolStripSeparator3";
+this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
+this.toolStripSeparator4,
+this.toolStripSeparator4.Name = "toolStripSeparator4";
+this.toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
+this.toolStripSeparator5,
+this.toolStripSeparator5.Name = "toolStripSeparator5";
+this.toolStripSeparator6 = new System.Windows.Forms.ToolStripSeparator();
+this.toolStripSeparator6,
+this.toolStripSeparator6.Name = "toolStripSeparator6";
+this.toolStripSeparator7 = new System.Windows.Forms.ToolStripSeparator();
+this.toolStripSeparator7,
+this.toolStripSeparator7.Name = "toolStripSeparator7";
+this.toolStripSeparator8 = new System.Windows.Forms.ToolStripSeparator();
+this.toolStripSeparator8,
+this.toolStripSeparator8.Name = "toolStripSeparator8";
+this.toolStripSeparator9 = new System.Windows.Forms.ToolStripSeparator();
+this.toolStripSeparator9.Name = "toolStripSeparator9";
+this.toolStripSplitButton1 = new GreenshotToolStripDropDownButton();
+this.toolStripSplitButton1,
+this.toolStripSplitButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+this.toolStripSplitButton1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+this.toolStripSplitButton1.Image = ((System.Drawing.Image)(resources.GetObject("toolStripSplitButton1.Image")));
+this.toolStripSplitButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
+this.toolStripSplitButton1.LanguageKey = "editor_effects";
+this.toolStripSplitButton1.Name = "toolStripSplitButton1";
+this.toolStripSplitButton1.ShowDropDownArrow = true;
+this.toolStripSplitButton1.Text = "toolStripSplitButton1";
+this.topToolStripContainer = new System.Windows.Forms.ToolStripContainer();
+this.topToolStripContainer.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+this.topToolStripContainer.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+this.topToolStripContainer.BottomToolStripPanel.Controls.Add(this.statusStrip1);
+this.topToolStripContainer.BottomToolStripPanel.ResumeLayout(true);
+this.topToolStripContainer.BottomToolStripPanel.SuspendLayout();
+this.topToolStripContainer.ContentPanel.AutoScroll = true;
+this.topToolStripContainer.ContentPanel.Controls.Add(this.tableLayoutPanel1);
+this.topToolStripContainer.ContentPanel.ResumeLayout(true);
+this.topToolStripContainer.ContentPanel.Size = new System.Drawing.Size(761, 385);
+this.topToolStripContainer.ContentPanel.SuspendLayout();
+this.topToolStripContainer.Dock = System.Windows.Forms.DockStyle.Fill;
+this.topToolStripContainer.LeftToolStripPanel.Join(this.toolsToolStrip,0);
+this.topToolStripContainer.LeftToolStripPanel.ResumeLayout(true);
+this.topToolStripContainer.LeftToolStripPanel.SuspendLayout();
+this.topToolStripContainer.Location = new System.Drawing.Point(0, 0);
+this.topToolStripContainer.Name = "toolStripContainer1";
+this.topToolStripContainer.ResumeLayout(true);
+this.topToolStripContainer.Size = new System.Drawing.Size(785, 485);
+this.topToolStripContainer.SuspendLayout();
+this.topToolStripContainer.TabIndex = 2;
+this.topToolStripContainer.Text = "toolStripContainer1";
+this.topToolStripContainer.TopToolStripPanel.Join(this.destinationsToolStrip, 1);
+this.topToolStripContainer.TopToolStripPanel.Join(this.menuStrip1,0);
+this.topToolStripContainer.TopToolStripPanel.Join(this.propertiesToolStrip, 2);
+this.topToolStripContainer.TopToolStripPanel.ResumeLayout(true);
+this.topToolStripContainer.TopToolStripPanel.SuspendLayout();
+this.tornEdgesToolStripMenuItem = new Greenshot.Base.Controls.GreenshotToolStripMenuItem();
+this.tornEdgesToolStripMenuItem,
+this.tornEdgesToolStripMenuItem.LanguageKey = "editor_torn_edge";
+this.tornEdgesToolStripMenuItem.MouseUp += new System.Windows.Forms.MouseEventHandler(this.TornEdgesToolStripMenuItemMouseUp);
+this.tornEdgesToolStripMenuItem.Name = "tornEdgesToolStripMenuItem";
+this.undoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+this.undoToolStripMenuItem,
+this.undoToolStripMenuItem.Click += new System.EventHandler(this.UndoToolStripMenuItemClick);
+this.undoToolStripMenuItem.Enabled = false;
+this.undoToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("undoToolStripMenuItem.Image")));
+this.undoToolStripMenuItem.Name = "undoToolStripMenuItem";
+this.undoToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Z)));
+this.undoToolStripMenuItem.Text = "Undo";
+this.upOneLevelToolStripMenuItem = new Greenshot.Base.Controls.GreenshotToolStripMenuItem();
+this.upOneLevelToolStripMenuItem,
+this.upOneLevelToolStripMenuItem.Click += new System.EventHandler(this.UpOneLevelToolStripMenuItemClick);
+this.upOneLevelToolStripMenuItem.Enabled = false;
+this.upOneLevelToolStripMenuItem.LanguageKey = "editor_uponelevel";
+this.upOneLevelToolStripMenuItem.Name = "upOneLevelToolStripMenuItem";
+this.upOneLevelToolStripMenuItem.ShortcutKeyDisplayString = "PgUp";
+this.upToTopToolStripMenuItem = new Greenshot.Base.Controls.GreenshotToolStripMenuItem();
+this.upToTopToolStripMenuItem,
+this.upToTopToolStripMenuItem.Click += new System.EventHandler(this.UpToTopToolStripMenuItemClick);
+this.upToTopToolStripMenuItem.Enabled = false;
+this.upToTopToolStripMenuItem.LanguageKey = "editor_uptotop";
+this.upToTopToolStripMenuItem.Name = "upToTopToolStripMenuItem";
+this.upToTopToolStripMenuItem.ShortcutKeyDisplayString = "Home";
+this.verticalCropModeToolStripMenuItem = new Greenshot.Base.Controls.GreenshotToolStripMenuItem();
+this.verticalCropModeToolStripMenuItem,
+this.verticalCropModeToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("CropVertical.Image")));
+this.verticalCropModeToolStripMenuItem.LanguageKey = "editor_cropmode_vertical";
+this.verticalCropModeToolStripMenuItem.Name = "verticalCropModeToolStripMenuItem";
+this.verticalCropModeToolStripMenuItem.Tag = CropContainer.CropModes.Vertical;
+this.zoom200MenuItem = new System.Windows.Forms.ToolStripMenuItem();
+this.zoom200MenuItem,
+this.zoom200MenuItem.Click += new System.EventHandler(this.ZoomSetValueMenuItemClick);
+this.zoom200MenuItem.Name = "zoom200MenuItem";
+this.zoom200MenuItem.Size = new System.Drawing.Size(209, 22);
+this.zoom200MenuItem.Tag = "2/1";
+this.zoom200MenuItem.Text = "200%";
+this.zoom25MenuItem = new System.Windows.Forms.ToolStripMenuItem();
+this.zoom25MenuItem,
+this.zoom25MenuItem.Click += new System.EventHandler(this.ZoomSetValueMenuItemClick);
+this.zoom25MenuItem.Name = "zoom25MenuItem";
+this.zoom25MenuItem.Size = new System.Drawing.Size(209, 22);
+this.zoom25MenuItem.Tag = "1/4";
+this.zoom25MenuItem.Text = "25%";
+this.zoom300MenuItem = new System.Windows.Forms.ToolStripMenuItem();
+this.zoom300MenuItem,
+this.zoom300MenuItem.Click += new System.EventHandler(this.ZoomSetValueMenuItemClick);
+this.zoom300MenuItem.Name = "zoom300MenuItem";
+this.zoom300MenuItem.Size = new System.Drawing.Size(209, 22);
+this.zoom300MenuItem.Tag = "3/1";
+this.zoom300MenuItem.Text = "300%";
+this.zoom400MenuItem = new System.Windows.Forms.ToolStripMenuItem();
+this.zoom400MenuItem,
+this.zoom400MenuItem.Click += new System.EventHandler(this.ZoomSetValueMenuItemClick);
+this.zoom400MenuItem.Name = "zoom400MenuItem";
+this.zoom400MenuItem.Size = new System.Drawing.Size(209, 22);
+this.zoom400MenuItem.Tag = "4/1";
+this.zoom400MenuItem.Text = "400%";
+this.zoom50MenuItem = new System.Windows.Forms.ToolStripMenuItem();
+this.zoom50MenuItem,
+this.zoom50MenuItem.Click += new System.EventHandler(this.ZoomSetValueMenuItemClick);
+this.zoom50MenuItem.Name = "zoom50MenuItem";
+this.zoom50MenuItem.Size = new System.Drawing.Size(209, 22);
+this.zoom50MenuItem.Tag = "1/2";
+this.zoom50MenuItem.Text = "50%";
+this.zoom600MenuItem = new System.Windows.Forms.ToolStripMenuItem();
+this.zoom600MenuItem.Click += new System.EventHandler(this.ZoomSetValueMenuItemClick);
+this.zoom600MenuItem.Name = "zoom600MenuItem";
+this.zoom600MenuItem.Size = new System.Drawing.Size(209, 22);
+this.zoom600MenuItem.Tag = "6/1";
+this.zoom600MenuItem.Text = "600%";
+this.zoom600MenuItem});
+this.zoom66MenuItem = new System.Windows.Forms.ToolStripMenuItem();
+this.zoom66MenuItem,
+this.zoom66MenuItem.Click += new System.EventHandler(this.ZoomSetValueMenuItemClick);
+this.zoom66MenuItem.Name = "zoom66MenuItem";
+this.zoom66MenuItem.Size = new System.Drawing.Size(209, 22);
+this.zoom66MenuItem.Tag = "2/3";
+this.zoom66MenuItem.Text = "66%";
+this.zoom75MenuItem = new System.Windows.Forms.ToolStripMenuItem();
+this.zoom75MenuItem,
+this.zoom75MenuItem.Click += new System.EventHandler(this.ZoomSetValueMenuItemClick);
+this.zoom75MenuItem.Name = "zoom75MenuItem";
+this.zoom75MenuItem.Size = new System.Drawing.Size(209, 22);
+this.zoom75MenuItem.Tag = "3/4";
+this.zoom75MenuItem.Text = "75%";
+this.zoomActualSizeMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+this.zoomActualSizeMenuItem,
+this.zoomActualSizeMenuItem.Click += new System.EventHandler(this.ZoomSetValueMenuItemClick);
+this.zoomActualSizeMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("zoomActualSizeMenuItem.Image")));
+this.zoomActualSizeMenuItem.Name = "zoomActualSizeMenuItem";
+this.zoomActualSizeMenuItem.ShortcutKeyDisplayString = "Ctrl+0";
+this.zoomActualSizeMenuItem.Size = new System.Drawing.Size(209, 22);
+this.zoomActualSizeMenuItem.Tag = "1/1";
+this.zoomActualSizeMenuItem.Text = "100% - Actual Size";
+this.zoomBestFitMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+this.zoomBestFitMenuItem,
+this.zoomBestFitMenuItem.Click += new System.EventHandler(this.ZoomBestFitMenuItemClick);
+this.zoomBestFitMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("zoomBestFitMenuItem.Image")));
+this.zoomBestFitMenuItem.Name = "zoomBestFitMenuItem";
+this.zoomBestFitMenuItem.ShortcutKeyDisplayString = "Ctrl+9";
+this.zoomBestFitMenuItem.Size = new System.Drawing.Size(209, 22);
+this.zoomBestFitMenuItem.Text = "Best Fit";
+this.zoomInMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+this.zoomInMenuItem,
+this.zoomInMenuItem.Click += new System.EventHandler(this.ZoomInMenuItemClick);
+this.zoomInMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("zoomInMenuItem.Image")));
+this.zoomInMenuItem.Name = "zoomInMenuItem";
+this.zoomInMenuItem.ShortcutKeyDisplayString = "Ctrl++";
+this.zoomInMenuItem.Size = new System.Drawing.Size(209, 22);
+this.zoomInMenuItem.Text = "Zoom In";
+this.zoomMainMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+this.zoomMainMenuItem,
+this.zoomMainMenuItem.DropDown = this.zoomMenuStrip;
+this.zoomMainMenuItem.Name = "zoomMainMenuItem";
+this.zoomMainMenuItem.Size = new System.Drawing.Size(51, 20);
+this.zoomMainMenuItem.Text = "Zoom";
+this.zoomMenuSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+this.zoomMenuSeparator1,
+this.zoomMenuSeparator1.Name = "zoomMenuSeparator1";
+this.zoomMenuSeparator1.Size = new System.Drawing.Size(206, 6);
+this.zoomMenuSeparator2 = new System.Windows.Forms.ToolStripSeparator();
+this.zoomMenuSeparator2,
+this.zoomMenuSeparator2.Name = "zoomMenuSeparator2";
+this.zoomMenuSeparator2.Size = new System.Drawing.Size(206, 6);
+this.zoomMenuSeparator3 = new System.Windows.Forms.ToolStripSeparator();
+this.zoomMenuSeparator3,
+this.zoomMenuSeparator3.Name = "zoomMenuSeparator3";
+this.zoomMenuSeparator3.Size = new System.Drawing.Size(206, 6);
+this.zoomMenuSeparator4 = new System.Windows.Forms.ToolStripSeparator();
+this.zoomMenuSeparator4,
+this.zoomMenuSeparator4.Name = "zoomMenuSeparator4";
+this.zoomMenuSeparator4.Size = new System.Drawing.Size(206, 6);
+this.zoomMenuStrip = new System.Windows.Forms.ContextMenuStrip(this.components);
+this.zoomMenuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+this.zoomMenuStrip.Name = "zoomMenuStrip";
+this.zoomMenuStrip.ResumeLayout(false);
+this.zoomMenuStrip.Size = new System.Drawing.Size(210, 292);
+this.zoomMenuStrip.SuspendLayout();
+this.zoomOutMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+this.zoomOutMenuItem,
+this.zoomOutMenuItem.Click += new System.EventHandler(this.ZoomOutMenuItemClick);
+this.zoomOutMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("zoomOutMenuItem.Image")));
+this.zoomOutMenuItem.Name = "zoomOutMenuItem";
+this.zoomOutMenuItem.ShortcutKeyDisplayString = "Ctrl+-";
+this.zoomOutMenuItem.Size = new System.Drawing.Size(210, 22);
+this.zoomOutMenuItem.Text = "Zoom Out";
+this.zoomStatusDropDownBtn = new System.Windows.Forms.ToolStripDropDownButton();
+this.zoomStatusDropDownBtn.DropDown = this.zoomMenuStrip;
+this.zoomStatusDropDownBtn.Image = ((System.Drawing.Image)(resources.GetObject("zoomStatusDropDownBtn.Image")));
+this.zoomStatusDropDownBtn.ImageTransparentColor = System.Drawing.Color.Magenta;
+this.zoomStatusDropDownBtn.Name = "zoomStatusDropDownBtn";
+this.zoomStatusDropDownBtn.Size = new System.Drawing.Size(64, 22);
+this.zoomStatusDropDownBtn.Text = "100%";
+this.zoomStatusDropDownBtn});
+using Greenshot.Base.Controls;
+using Greenshot.Editor.Controls;
+using Greenshot.Editor.Drawing.Emoji;
+using Greenshot.Editor.Drawing;
+{
+| System.Windows.Forms.ToolStripStatusLabelBorderSides.Bottom)));
+| System.Windows.Forms.ToolStripStatusLabelBorderSides.Right)
+}
+});
